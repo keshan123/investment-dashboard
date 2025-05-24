@@ -42,7 +42,7 @@
         *ngIf="priceTick.history.length > 1"
         [attr.points]="getLineGraphPoints(priceTick.history, 140, 80)"
         fill="none"
-        [attr.stroke]="lineColor"
+        [attr.stroke]="konamiMario.getLineColors()[0]"
         stroke-width="2"
       />
       <!-- Optionally, show the current price as a dot -->
@@ -51,7 +51,7 @@
         [attr.cx]="getCurrentX(priceTick.history, 140)"
         [attr.cy]="getCurrentY(priceTick.history, 80)"
         r="3"
-        [attr.fill]="lineColor"
+        [attr.fill]="konamiMario.getLineColors()[0]"
         stroke="#232323"
         stroke-width="1"
       />

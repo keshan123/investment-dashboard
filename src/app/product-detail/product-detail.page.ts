@@ -7,6 +7,7 @@ import { PortfolioService } from '../portfolio/portfolio.page';
 import { ToastController } from '@ionic/angular/standalone';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 import { Subscription } from 'rxjs';
+import { KonamiMarioService } from '../konami-mario.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -29,38 +30,14 @@ export class ProductDetailPage implements OnInit, OnDestroy {
   private router = inject(Router);
   private toastController = inject(ToastController);
   private priceFluctuation = inject(PriceFluctuationService);
-  static lineColors = ['#4F8EF7']; // default blue
-  lineColor = ProductDetailPage.lineColors[0];
+  public konamiMario = inject(KonamiMarioService);
   private lastPrice: number | null = null;
-  private jumpSmall: HTMLAudioElement;
-  private jumpSuper: HTMLAudioElement;
-  private konamiActive = false;
   private isActiveRoute = true;
   private routerEventsSub: Subscription | null = null;
   private priceTickSub: Subscription | null = null;
-  private static konamiEventListenerAdded = false;
-  private powerup = new Audio('assets/smb_powerup.wav');
 
   constructor(private portfolioService: PortfolioService) {
     this.loadProduct();
-    // Listen for konami-mario event only once per page instance
-    if (!ProductDetailPage.konamiEventListenerAdded) {
-      window.addEventListener('konami-mario', () => {
-        ProductDetailPage.lineColors = ['#E52521', '#0090FF', '#FFD700', '#43B047']; // Mario red, blue, yellow, green
-        this.lineColor = ProductDetailPage.lineColors[0];
-        this.konamiActive = true;
-        localStorage.setItem('konamiActive', 'true');
-        this.powerup.currentTime = 0;
-        this.powerup.play();
-      });
-      ProductDetailPage.konamiEventListenerAdded = true;
-    }
-    // Restore konamiActive from localStorage
-    if (localStorage.getItem('konamiActive') === 'true') {
-      ProductDetailPage.lineColors = ['#E52521', '#0090FF', '#FFD700', '#43B047'];
-      this.lineColor = ProductDetailPage.lineColors[0];
-      this.konamiActive = true;
-    }
     // Listen to router events to check if this page is active
     const router = (this as any).router || null;
     if (router) {
@@ -71,9 +48,6 @@ export class ProductDetailPage implements OnInit, OnDestroy {
         }
       });
     }
-    // Initialize audio objects
-    this.jumpSmall = new Audio('assets/smb_jump-small.wav');
-    this.jumpSuper = new Audio('assets/smb_jump-super.wav');
     // Listen for route changes
     const activatedRoute = (this as any).activatedRoute || null;
     if (activatedRoute && activatedRoute.paramMap) {
@@ -88,20 +62,11 @@ export class ProductDetailPage implements OnInit, OnDestroy {
   }
 
   async ngOnInit() {
-    // Re-initialize audio objects on each open
-    this.jumpSmall = new Audio('assets/smb_jump-small.wav');
-    this.jumpSuper = new Audio('assets/smb_jump-super.wav');
     // Ensure price service is initialized
     if (!(this.priceFluctuation as any).initialized) {
       const resp = await fetch('assets/pricing.json');
       const pricing = await resp.json();
       this.priceFluctuation.initPrices(pricing);
-    }
-    // Restore konamiActive from localStorage on each init
-    if (localStorage.getItem('konamiActive') === 'true') {
-      ProductDetailPage.lineColors = ['#E52521', '#0090FF', '#FFD700', '#43B047'];
-      this.lineColor = ProductDetailPage.lineColors[0];
-      this.konamiActive = true;
     }
     this.subscribeToPriceTick();
   }
@@ -113,13 +78,11 @@ export class ProductDetailPage implements OnInit, OnDestroy {
         this.priceTick = tick;
         this.price = tick.price;
         // Play sound on price up/down only if konamiActive and this chart is active
-        if (this.konamiActive && this.isActiveRoute && this.lastPrice !== null) {
+        if (this.konamiMario.isKonamiActive() && this.isActiveRoute && this.lastPrice !== null) {
           if (tick.price > this.lastPrice) {
-            this.jumpSmall.currentTime = 0;
-            this.jumpSmall.play();
+            this.konamiMario.playJumpSmall();
           } else if (tick.price < this.lastPrice) {
-            this.jumpSuper.currentTime = 0;
-            this.jumpSuper.play();
+            this.konamiMario.playJumpSuper();
           }
         }
         this.lastPrice = tick.price;
@@ -128,18 +91,10 @@ export class ProductDetailPage implements OnInit, OnDestroy {
   }
 
   private async onSymbolChange() {
-    this.jumpSmall = new Audio('assets/smb_jump-small.wav');
-    this.jumpSuper = new Audio('assets/smb_jump-super.wav');
     this.lastPrice = null;
     this.priceTick = null;
     this.price = null;
     this.loading = true;
-    // Restore konamiActive from localStorage on symbol change
-    if (localStorage.getItem('konamiActive') === 'true') {
-      ProductDetailPage.lineColors = ['#E52521', '#0090FF', '#FFD700', '#43B047'];
-      this.lineColor = ProductDetailPage.lineColors[0];
-      this.konamiActive = true;
-    }
     await this.loadProduct();
     this.subscribeToPriceTick();
   }
@@ -183,9 +138,8 @@ export class ProductDetailPage implements OnInit, OnDestroy {
     console.log('buy() quantity:', this.quantity);
     if (this.product && this.price != null) {
       this.portfolioService.addOrUpdateInvestment(this.product, this.quantity, this.price);
-      if (this.konamiActive) {
-        this.powerup.currentTime = 0;
-        this.powerup.play();
+      if (this.konamiMario.isKonamiActive()) {
+        this.konamiMario.playPowerupSound();
       }
       const toast = await this.toastController.create({
         message: 'Investment added to your portfolio!',
