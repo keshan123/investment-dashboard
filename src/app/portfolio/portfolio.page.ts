@@ -83,6 +83,16 @@ export class PortfolioPage implements OnInit {
   )[]>;
   livePrices: { [symbol: string]: PriceTick } = {};
   private livePricesSubject = new BehaviorSubject<{ [symbol: string]: PriceTick }>({});
+  donutColors = [
+    '#4F8EF7', // blue
+    '#34C759', // green
+    '#FF9500', // orange
+    '#FF2D55', // red
+    '#AF52DE', // purple
+    '#FFD60A', // yellow
+    '#5AC8FA', // light blue
+    '#5856D6', // indigo
+  ];
 
   constructor(
     private portfolioService: PortfolioService,
@@ -134,5 +144,25 @@ export class PortfolioPage implements OnInit {
     if (tick.price > tick.prevPrice) return 'green';
     if (tick.price < tick.prevPrice) return 'red';
     return '';
+  }
+
+  getDonutDash(percent: number, r: number): string {
+    const circ = 2 * Math.PI * r;
+    const len = circ * (percent / 100);
+    return `${len} ${circ - len}`;
+  }
+
+  getDonutOffset(i: number, investments: any[], r: number): number {
+    // Offset is the sum of previous percents
+    const circ = 2 * Math.PI * r;
+    let offsetPercent = 0;
+    for (let j = 0; j < i; j++) {
+      offsetPercent += investments[j].percent;
+    }
+    return circ * (1 - offsetPercent / 100);
+  }
+
+  getTotalValue(investments: any[]): number {
+    return investments.reduce((sum, inv) => sum + inv.totalValue, 0);
   }
 }

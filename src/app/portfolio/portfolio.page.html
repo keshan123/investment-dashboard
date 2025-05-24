@@ -13,9 +13,35 @@
     </ion-toolbar>
   </ion-header>
 
+  <!-- Donut Chart -->
+  <div style="display: flex; justify-content: center; align-items: center; margin: 24px 0;">
+    <svg width="140" height="140" viewBox="0 0 140 140">
+      <g *ngIf="investmentsWithPercent$ | async as investments">
+        <ng-container *ngFor="let inv of investments; let i = index; let last = last">
+          <circle
+            [attr.r]="60"
+            [attr.cx]="70"
+            [attr.cy]="70"
+            fill="none"
+            [attr.stroke]="donutColors[i % donutColors.length]"
+            [attr.stroke-width]="10"
+            [attr.stroke-dasharray]="getDonutDash(inv.percent, 60)"
+            [attr.stroke-dashoffset]="getDonutOffset(i, investments, 60)"
+            stroke-linecap="round"
+          />
+        </ng-container>
+        <!-- Center text -->
+        <text x="70" y="70" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#fff" font-weight="bold">
+          ${{ getTotalValue(investments) | number:'1.0-0' }}
+        </text>
+      </g>
+    </svg>
+  </div>
+
   <ion-list *ngIf="investmentsWithPercent$ | async as investments">
-    <ion-item *ngFor="let inv of investments" style="padding: 12px 12px 0 12px;" class="ion-no-border">
-      <div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+    <ion-item *ngFor="let inv of investments; let i = index" style="padding: 12px 12px 0 12px; position: relative;" class="ion-no-border">
+      <div style="position: absolute; left: 0; top: 3px; width: 4px; height: 30px; border-radius: 2px;" [style.background]="donutColors[i % donutColors.length]"></div>
+      <div style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding-left: 12px;">
         <!-- First column: Name and Symbol -->
         <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
           <span style="font-weight: bold;">{{ inv.name }}</span>

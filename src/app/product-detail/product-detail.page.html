@@ -8,27 +8,31 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div *ngIf="loading">Loading...</div>
-  <div *ngIf="!loading && product">
-    <h2>{{ product.name }}</h2>
-    <p>Symbol: {{ product.symbol }}</p>
-    <p *ngIf="product.description">{{ product.description }}</p>
-    <p>
-      Price:
-      <span [style.color]="getPriceColor()">
-        {{ priceTick?.price | number:'1.2-2' }}
-      </span>
-    </p>
-    <form (ngSubmit)="buy()">
-      <ion-item>
-        <ion-label position="floating">Quantity</ion-label>
-        <ion-input type="number" [(ngModel)]="quantity" name="quantity" min="1" (ngModelChange)="onQuantityChange($event)"></ion-input>
-      </ion-item>
-      <div style="margin-top: 1em;">
-        <strong>Total:</strong>
-        {{ (priceTick?.price || price || 0) * validQuantity | number:'1.2-2' }}
+  <div style="max-width: 420px; margin: 32px auto; padding: 24px 20px; background: #232323; border-radius: 18px; box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08); display: flex; flex-direction: column; gap: 20px;">
+    <div *ngIf="loading" style="text-align: center; padding: 32px 0;">Loading...</div>
+    <div *ngIf="!loading && product" style="display: flex; flex-direction: column; gap: 18px;">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <h2 style="margin: 0; font-size: 1.4em; font-weight: 700;">{{ product.name }}</h2>
+        <span style="color: #888; font-size: 1em;">{{ product.symbol }}</span>
+        <span *ngIf="product.description" style="color: #bbb; font-size: 1em; margin-top: 4px;">{{ product.description }}</span>
       </div>
-      <ion-button expand="block" type="submit" [disabled]="!validQuantity">Buy</ion-button>
-    </form>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="font-size: 1.2em; font-weight: 600;">Price:</span>
+        <span [style.color]="getPriceColor()" style="font-size: 1.2em; font-weight: 600;">
+          {{ priceTick?.price | number:'1.2-2' }}
+        </span>
+      </div>
+      <form (ngSubmit)="buy()" style="display: flex; flex-direction: column; gap: 16px;">
+        <ion-item style="--background: transparent; --border-radius: 12px;">
+          <ion-label position="floating">Quantity</ion-label>
+          <ion-input type="number" [(ngModel)]="quantity" name="quantity" min="1" (ngModelChange)="onQuantityChange($event)"></ion-input>
+        </ion-item>
+        <div style="margin-top: 1em; font-size: 1.1em;">
+          <strong>Total:</strong>
+          {{ (priceTick?.price || price || 0) * validQuantity | number:'1.2-2' }}
+        </div>
+        <ion-button expand="block" type="submit" [disabled]="!validQuantity">Buy</ion-button>
+      </form>
+    </div>
   </div>
 </ion-content>
