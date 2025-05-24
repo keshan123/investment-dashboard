@@ -15,7 +15,7 @@
         *ngIf="priceTick.history.length > 1"
         [attr.points]="getLineGraphPoints(priceTick.history, 140, 80)"
         fill="none"
-        stroke="#4F8EF7"
+        [attr.stroke]="lineColor"
         stroke-width="2"
       />
       <!-- Optionally, show the current price as a dot -->
@@ -24,7 +24,7 @@
         [attr.cx]="getCurrentX(priceTick.history, 140)"
         [attr.cy]="getCurrentY(priceTick.history, 80)"
         r="3"
-        fill="#FFD60A"
+        [attr.fill]="lineColor"
         stroke="#232323"
         stroke-width="1"
       />
