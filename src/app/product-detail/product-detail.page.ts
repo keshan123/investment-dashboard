@@ -91,4 +91,32 @@ export class ProductDetailPage implements OnInit {
     }
     this.router.navigate(['/tabs/portfolio']);
   }
+
+  getLineGraphPoints(history: number[], width: number, height: number): string {
+    if (!history.length) return '';
+    const min = Math.min(...history);
+    const max = Math.max(...history);
+    const range = max - min || 1;
+    const n = history.length;
+    return history.map((v, i) => {
+      const x = (i / (n - 1)) * (width - 8) + 4; // 4px padding left/right
+      const y = height - 4 - ((v - min) / range) * (height - 8); // 4px padding top/bottom
+      return `${x},${y}`;
+    }).join(' ');
+  }
+
+  getCurrentX(history: number[], width: number): number {
+    if (!history.length) return 0;
+    const n = history.length;
+    return ((n - 1) / (n - 1)) * (width - 8) + 4;
+  }
+
+  getCurrentY(history: number[], height: number): number {
+    if (!history.length) return 0;
+    const min = Math.min(...history);
+    const max = Math.max(...history);
+    const range = max - min || 1;
+    const v = history[history.length - 1];
+    return height - 4 - ((v - min) / range) * (height - 8);
+  }
 } 
