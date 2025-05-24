@@ -35,6 +35,8 @@ export class ProductDetailPage implements OnInit, OnDestroy {
   private isActiveRoute = true;
   private routerEventsSub: Subscription | null = null;
   private priceTickSub: Subscription | null = null;
+  public ownedQuantity = 0;
+  private investmentsSub: Subscription | null = null;
 
   constructor(private portfolioService: PortfolioService) {
     this.loadProduct();
@@ -59,6 +61,15 @@ export class ProductDetailPage implements OnInit, OnDestroy {
         }
       });
     }
+    // Subscribe to investments and update ownedQuantity
+    this.investmentsSub = this.portfolioService.investments$.subscribe(investments => {
+      const inv = investments.find(i => i.symbol === this.symbol);
+      this.ownedQuantity = inv ? inv.quantity : 0;
+      // Reset quantity if needed
+      if (this.quantity > this.ownedQuantity && this.ownedQuantity > 0) {
+        this.quantity = 1;
+      }
+    });
   }
 
   async ngOnInit() {
@@ -180,12 +191,33 @@ export class ProductDetailPage implements OnInit, OnDestroy {
     return height - 4 - ((v - min) / range) * (height - 8);
   }
 
+  async sell() {
+    if (this.ownedQuantity > 0 && this.quantity > 0 && this.price != null) {
+      this.portfolioService.sellInvestment(this.symbol!, this.quantity, this.price);
+      this.quantity = 1;
+      if (this.konamiMario.isKonamiActive()) {
+        this.konamiMario.playPauseSound();
+      }
+      const toast = await this.toastController.create({
+        message: 'Investment sold!',
+        duration: 1500,
+        color: 'success',
+        position: 'bottom',
+      });
+      await toast.present();
+      this.router.navigate(['/tabs/portfolio']);
+    }
+  }
+
   ngOnDestroy() {
     if (this.routerEventsSub) {
       this.routerEventsSub.unsubscribe();
     }
     if (this.priceTickSub) {
       this.priceTickSub.unsubscribe();
+    }
+    if (this.investmentsSub) {
+      this.investmentsSub.unsubscribe();
     }
   }
 } 

@@ -58,20 +58,26 @@
     </svg>
   </div>
 
-  <!-- Buy Button -->
+  <!-- Buy/Sell Section -->
   <div style="max-width: 420px; margin: 0 auto; padding: 0 20px 16px 20px;">
-    <form (ngSubmit)="buy()" style="display: flex; flex-direction: column; gap: 16px;">
+    <form style="display: flex; flex-direction: column; gap: 16px;">
       <ion-item style="--background: transparent; --border-radius: 12px;">
         <ion-label position="floating">Quantity</ion-label>
-        <ion-input type="number" [(ngModel)]="quantity" name="quantity" min="1" (ngModelChange)="onQuantityChange($event)"></ion-input>
+        <ion-input type="number" [(ngModel)]="quantity" name="quantity" min="1" (ngModelChange)="onQuantityChange($event)" [max]="ownedQuantity > 0 ? ownedQuantity : null"></ion-input>
       </ion-item>
-      <div style="margin-top: 1em; font-size: 1.1em;">
-        <strong>Total:</strong>
-        {{ (priceTick?.price || price || 0) * validQuantity | number:'1.2-2' }}
+      <div style="display: flex; gap: 12px; margin-top: 8px;">
+        <ion-button expand="block" type="button" (click)="buy()" [disabled]="!validQuantity" style="--background: #19B074; font-weight: 600; font-size: 1.1em; flex: 1; justify-content: center; align-items: center; display: flex;">
+          Buy
+        </ion-button>
+        <ion-button *ngIf="ownedQuantity > 0" expand="block" type="button" (click)="sell()" [disabled]="quantity < 1 || quantity > ownedQuantity" style="--background: #DC1433; font-weight: 600; font-size: 1.1em; flex: 1; justify-content: center; align-items: center; display: flex;">
+          Sell
+        </ion-button>
       </div>
-      <ion-button expand="block" type="submit" [disabled]="!validQuantity" style="--background: #19B074; font-weight: 600; font-size: 1.1em; justify-content: center; align-items: center; display: flex;">
-        Buy
-      </ion-button>
+      <div style="margin-top: 1em; font-size: 1.1em; display: flex; justify-content: space-between;">
+        <span><strong>Total:</strong> {{ (priceTick?.price || price || 0) * validQuantity | number:'1.2-2' }}</span>
+        <span *ngIf="ownedQuantity > 0"><strong>Proceeds:</strong> {{ (priceTick?.price || price || 0) * quantity | number:'1.2-2' }}</span>
+      </div>
+      <div *ngIf="ownedQuantity > 0" style="color: #fff; font-size: 1em; margin-bottom: 2px;">You own {{ ownedQuantity }} shares</div>
     </form>
   </div>
 

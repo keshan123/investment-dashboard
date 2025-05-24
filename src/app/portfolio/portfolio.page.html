@@ -1,8 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Portfolio
-    </ion-title>
+    <div style="display: flex; align-items: center; width: 100%;">
+      <ion-title style="flex: 1;">Portfolio</ion-title>
+      <div style="font-size: 1.1em; font-weight: 600; color: #19B074; display: flex; align-items: center; gap: 6px; justify-content: flex-end; min-width: 0; padding-right: 20px;">
+        <span style="color: #fff; font-size: 0.98em; font-weight: 500; margin-right: 4px;">Wallet:</span>
+        <ng-container *ngIf="cashBalance$ | async as cash">
+          <span [style.color]="cash < 0 ? '#DC1433' : '#19B074'">
+            ${{ cash | number:'1.2-2' }}
+          </span>
+        </ng-container>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 

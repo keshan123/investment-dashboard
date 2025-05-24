@@ -1,9 +1,12 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
+import { ToastController } from '@ionic/angular/standalone';
+import { ModalController } from '@ionic/angular';
+import { NegativeBalanceModalComponent } from './negative-balance-modal.component';
 
 export interface Investment {
   id: string;
@@ -29,6 +32,12 @@ export class PortfolioService {
   private readonly investmentsSubject = new BehaviorSubject<Investment[]>([]);
   /** Observable stream of current investments. */
   readonly investments$ = this.investmentsSubject.asObservable();
+
+  private readonly cashBalanceSubject = new BehaviorSubject<number>(
+    Number(localStorage.getItem('cashBalance')) || 0
+  );
+  /** Observable stream of cash balance. */
+  readonly cashBalance$ = this.cashBalanceSubject.asObservable();
 
   constructor() {
     this.loadInvestments();
@@ -73,6 +82,50 @@ export class PortfolioService {
       });
     }
     this.investmentsSubject.next(current);
+    // Subtract cost from cash balance (allow negative)
+    const cost = quantity * price;
+    const newCash = (this.cashBalanceSubject.value || 0) - cost;
+    this.setCashBalance(newCash);
+  }
+
+  /** Returns the cash balance observable. */
+  getCashBalance$(): Observable<number> {
+    return this.cashBalance$;
+  }
+
+  /** Sets the cash balance and persists it. */
+  setCashBalance(amount: number): void {
+    this.cashBalanceSubject.next(amount);
+    localStorage.setItem('cashBalance', String(amount));
+  }
+
+  /**
+   * Sells a quantity of an investment, updates portfolio and cash balance.
+   * @param symbol The symbol of the investment to sell.
+   * @param quantity Number of shares to sell.
+   * @param price Price per share at sale.
+   */
+  sellInvestment(symbol: string, quantity: number, price: number): void {
+    const current = [...this.investmentsSubject.value];
+    const idx = current.findIndex(inv => inv.symbol === symbol);
+    if (idx > -1) {
+      const inv = current[idx];
+      if (inv.quantity < quantity) {
+        // Not enough shares to sell
+        return;
+      }
+      const newQty = inv.quantity - quantity;
+      if (newQty > 0) {
+        current[idx] = { ...inv, quantity: newQty };
+      } else {
+        current.splice(idx, 1);
+      }
+      this.investmentsSubject.next(current);
+      // Add proceeds to cash balance
+      const proceeds = quantity * price;
+      const newCash = (this.cashBalanceSubject.value || 0) + proceeds;
+      this.setCashBalance(newCash);
+    }
   }
 }
 
@@ -90,8 +143,10 @@ export class PortfolioService {
     IonContent,
     IonList,
     IonItem,
-    IonLabel
+    IonLabel,
+    IonIcon
   ],
+  providers: [ModalController],
 })
 export class PortfolioPage implements OnInit {
   /** Observable of investments with calculated metrics. */
@@ -112,9 +167,15 @@ export class PortfolioPage implements OnInit {
     '#5856D6', // indigo
   ];
 
+  /** Observable of cash balance for display in the template. */
+  public readonly cashBalance$ = this.portfolioService.cashBalance$;
+
+  private lastNegativeModalShown = false;
+
   constructor(
     private readonly portfolioService: PortfolioService,
-    private readonly priceFluctuation: PriceFluctuationService
+    private readonly priceFluctuation: PriceFluctuationService,
+    private modalController: ModalController
   ) {
     // Combine investments and live prices to calculate metrics for display
     this.investmentsWithMetrics$ = combineLatest([
@@ -123,6 +184,26 @@ export class PortfolioPage implements OnInit {
     ]).pipe(
       map(([investments, livePrices]) => this.calculateInvestmentMetrics(investments, livePrices))
     );
+
+    // Subscribe to cash balance and show modal if negative
+    this.portfolioService.cashBalance$.subscribe(async cash => {
+      if (cash < 0 && !this.lastNegativeModalShown) {
+        this.lastNegativeModalShown = true;
+        const modal = await this.modalController.create({
+          component: NegativeBalanceModalComponent,
+          cssClass: 'negative-balance-modal',
+          backdropDismiss: true,
+          breakpoints: [0, 0.5, 1],
+          initialBreakpoint: 0.5
+        });
+        modal.onDidDismiss().then(() => {
+          // Modal dismissed, but only show again if balance goes positive and negative again
+        });
+        await modal.present();
+      } else if (cash >= 0) {
+        this.lastNegativeModalShown = false;
+      }
+    });
   }
 
   async ngOnInit(): Promise<void> {

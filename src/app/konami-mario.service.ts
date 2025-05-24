@@ -7,6 +7,7 @@ export class KonamiMarioService {
   private powerup = new Audio('assets/smb_powerup.wav');
   private jumpSmall = new Audio('assets/smb_jump-small.wav');
   private jumpSuper = new Audio('assets/smb_jump-super.wav');
+  private pause = new Audio('assets/smb_pause.wav');
   private static konamiEventListenerAdded = false;
 
   constructor() {
@@ -52,6 +53,12 @@ export class KonamiMarioService {
   playJumpSuper(): void {
     this.jumpSuper.currentTime = 0;
     this.jumpSuper.play();
+  }
+
+  /** Plays the pause sound effect (for Konami sell). */
+  playPauseSound(): void {
+    this.pause.currentTime = 0;
+    this.pause.play();
   }
 
   /** Restores Konami state from localStorage. */
