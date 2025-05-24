@@ -35,3 +35,18 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Import SF Pro Display font if available */
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SF Pro Display'), local('SFProDisplay-Regular');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: bold;
+  font-weight: 700;
+  src: local('SF Pro Display Bold'), local('SFProDisplay-Bold');
+}

@@ -14,9 +14,14 @@ export class PriceFluctuationService {
   private priceSubjects: { [symbol: string]: BehaviorSubject<PriceTick> } = {};
   private initialized = false;
   private allPricesSubject = new BehaviorSubject<{ [symbol: string]: PriceTick }>({});
+  public priceUpdatesEnabled = false;
 
   constructor() {
     interval(1000).subscribe(() => this.updatePrices());
+  }
+
+  setPriceUpdatesEnabled(enabled: boolean) {
+    this.priceUpdatesEnabled = enabled;
   }
 
   // Call this once with the initial price list
@@ -44,6 +49,7 @@ export class PriceFluctuationService {
   }
 
   private updatePrices() {
+    if (!this.priceUpdatesEnabled) return;
     for (const symbol in this.prices) {
       const tick = this.prices[symbol];
       tick.prevPrice = tick.price;
