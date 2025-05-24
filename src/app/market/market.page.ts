@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 
 export interface Product {
   id: string;
@@ -60,22 +59,6 @@ export class MarketService {
     IonicModule,
   ],
   providers: [MarketService],
-  animations: [
-    trigger('listAnimation', [
-      transition('* <=> *', [
-        query(
-          ':enter',
-          [
-            style({ opacity: 0, transform: 'translateY(10px)' }),
-            stagger('70ms', [
-              animate('0.5s cubic-bezier(.35,0,.25,1)', style({ opacity: 1, transform: 'none' }))
-            ])
-          ],
-          { optional: true }
-        )
-      ])
-    ])
-  ]
 })
 export class MarketPage implements OnInit {
   products$: Observable<Product[]>;
@@ -141,5 +124,9 @@ export class MarketPage implements OnInit {
 
   trackBySymbol(index: number, product: Product) {
     return product.symbol;
+  }
+
+  logProductClick(product: Product) {
+    console.log('Product clicked:', product);
   }
 }

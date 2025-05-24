@@ -15,8 +15,8 @@
     <div style="padding: 16px 0 16px;">
       <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search by name or symbol" debounce="200"></ion-searchbar>
     </div>
-    <ion-list *ngIf="filteredProducts$ | async as products" [@listAnimation]="products.length">
-      <ion-item *ngFor="let product of products; trackBy: trackBySymbol" [routerLink]="['/market', product.symbol]">
+    <ion-list *ngIf="filteredProducts$ | async as products">
+      <ion-item *ngFor="let product of products; trackBy: trackBySymbol" [routerLink]="['/market', product.symbol]" button="true" detail="true" (click)="logProductClick(product)">
         <ion-label>
           <h2>{{ product.name }}</h2>
           <p>Symbol: {{ product.symbol }}</p>
