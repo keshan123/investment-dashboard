@@ -16,7 +16,7 @@
   <!-- Donut Chart -->
   <div style="display: flex; justify-content: center; align-items: center; margin: 24px 0;">
     <svg width="140" height="140" viewBox="0 0 140 140">
-      <g *ngIf="investmentsWithPercent$ | async as investments">
+      <g *ngIf="investmentsWithMetrics$ | async as investments">
         <ng-container *ngFor="let inv of investments; let i = index; let last = last">
           <circle
             [attr.r]="60"
@@ -32,7 +32,7 @@
         </ng-container>
         <!-- Center text -->
         <text x="70" y="70" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#fff" font-weight="bold">
-          ${{ getTotalValue(investments) | number:'1.0-0' }}
+          ${{ getTotalPortfolioValue(investments) | number:'1.0-0' }}
         </text>
       </g>
     </svg>
@@ -45,7 +45,7 @@
     <div style="flex: 1; text-align: right;">Investment</div>
   </div>
 
-  <div *ngIf="investmentsWithPercent$ | async as investments">
+  <div *ngIf="investmentsWithMetrics$ | async as investments">
     <div *ngFor="let inv of investments; let i = index; trackBy: trackBySymbol" style="padding: 12px 12px 0 12px; position: relative; margin-bottom: 8px; margin-left: 20px; margin-right: 20px;">
       <div style="position: absolute; left: 0; top: 12px; width: 4px; height: 30px; border-radius: 2px;" [style.background]="donutColors[i % donutColors.length]"></div>
       <div style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding-left: 12px;">
@@ -57,7 +57,7 @@
         <!-- Second column: Price and % Change -->
         <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
           <span>
-            <span [style.color]="getPriceColor(inv.symbol)">
+            <span [style.color]="getPriceChangeColor(inv.symbol)">
               {{ getPriceTick(inv.symbol)?.price | number:'1.2-2' }}
             </span>
           </span>

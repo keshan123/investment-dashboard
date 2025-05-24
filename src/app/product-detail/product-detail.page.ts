@@ -182,7 +182,7 @@ export class ProductDetailPage implements OnInit, OnDestroy {
   async buy() {
     console.log('buy() quantity:', this.quantity);
     if (this.product && this.price != null) {
-      this.portfolioService.addInvestment(this.product, this.quantity, this.price);
+      this.portfolioService.addOrUpdateInvestment(this.product, this.quantity, this.price);
       if (this.konamiActive) {
         this.powerup.currentTime = 0;
         this.powerup.play();
