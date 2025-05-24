@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Deposit Funds</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" style="--background: #232323;">
+  <div style="max-width: 420px; margin: 32px auto; background: #232323; border-radius: 18px; box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08); padding: 32px 20px; display: flex; flex-direction: column; gap: 24px; align-items: center;">
+    <div style="font-size: 1.1em; color: #fff; font-weight: 600;">Current Wallet Balance:</div>
+    <div style="font-size: 2em; font-weight: 700; color: #19B074; margin-bottom: 12px;">
+      ${{ cashBalance | number:'1.2-2' }}
+    </div>
+    <ion-item style="--background: #222; --border-radius: 12px; width: 100%;">
+      <ion-label position="floating">Deposit Amount</ion-label>
+      <ion-input type="number" [(ngModel)]="depositAmount" min="1" name="depositAmount"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="deposit()" [disabled]="!depositAmount || depositAmount <= 0" style="--background: #19B074; font-weight: 600; font-size: 1.1em; width: 100%; margin-top: 12px;">Deposit</ion-button>
+  </div>
+</ion-content> 

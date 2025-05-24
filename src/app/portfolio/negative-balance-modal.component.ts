@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-negative-balance-modal',
@@ -17,7 +18,10 @@ import { IonicModule } from '@ionic/angular';
       <p style="margin: 16px 0; color: #fff;">
         Please deposit funds or sell shares to make your balance positive again.
       </p>
-      <ion-button color="medium" (click)="dismiss()" style="padding: 0 12px; min-width: 80px; width: auto; align-self: center;">Dismiss</ion-button>
+      <div style="display: flex; justify-content: center; gap: 12px; margin-top: 24px;">
+        <ion-button color="primary" (click)="goToDeposit()" style="padding: 0 12px; min-width: 80px; width: auto; align-self: center;">Deposit</ion-button>
+        <ion-button color="medium" (click)="dismiss()" style="padding: 0 12px; min-width: 80px; width: auto; align-self: center;">Dismiss</ion-button>
+      </div>
     </ion-content>
   `,
   styles: [`
@@ -37,8 +41,16 @@ import { IonicModule } from '@ionic/angular';
   `]
 })
 export class NegativeBalanceModalComponent {
+  constructor(private router: Router) {}
+
   dismiss() {
     const modal = document.querySelector('ion-modal');
     if (modal) (modal as any).dismiss();
+  }
+
+  goToDeposit() {
+    const modal = document.querySelector('ion-modal');
+    if (modal) (modal as any).dismiss();
+    this.router.navigate(['/tabs/deposit']);
   }
 } 

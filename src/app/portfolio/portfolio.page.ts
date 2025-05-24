@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon, IonButton } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -7,6 +7,7 @@ import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service
 import { ToastController } from '@ionic/angular/standalone';
 import { ModalController } from '@ionic/angular';
 import { NegativeBalanceModalComponent } from './negative-balance-modal.component';
+import { Router } from '@angular/router';
 
 export interface Investment {
   id: string;
@@ -144,7 +145,8 @@ export class PortfolioService {
     IonList,
     IonItem,
     IonLabel,
-    IonIcon
+    IonIcon,
+    IonButton
   ],
   providers: [ModalController],
 })
@@ -175,7 +177,8 @@ export class PortfolioPage implements OnInit {
   constructor(
     private readonly portfolioService: PortfolioService,
     private readonly priceFluctuation: PriceFluctuationService,
-    private modalController: ModalController
+    private modalController: ModalController,
+    private router: Router
   ) {
     // Combine investments and live prices to calculate metrics for display
     this.investmentsWithMetrics$ = combineLatest([
@@ -296,5 +299,9 @@ export class PortfolioPage implements OnInit {
    */
   trackBySymbol(index: number, inv: InvestmentWithMetrics): string {
     return inv.symbol;
+  }
+
+  goToDeposit() {
+    this.router.navigate(['/tabs/deposit']);
   }
 }
