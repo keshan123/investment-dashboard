@@ -14,7 +14,7 @@ export class PriceFluctuationService {
   private priceSubjects: { [symbol: string]: BehaviorSubject<PriceTick> } = {};
   private initialized = false;
   private allPricesSubject = new BehaviorSubject<{ [symbol: string]: PriceTick }>({});
-  public priceUpdatesEnabled = false;
+  public priceUpdatesEnabled = true;
 
   constructor() {
     interval(1000).subscribe(() => this.updatePrices());

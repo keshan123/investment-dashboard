@@ -1,10 +1,11 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { RouterModule } from '@angular/router';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 
 export interface Product {
   id: string;
@@ -51,25 +52,45 @@ export class MarketService {
     CommonModule,
     NgIf,
     NgFor,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonList,
-    IonItem,
-    IonLabel,
     RouterModule,
+    FormsModule,
+    IonicModule,
   ],
+  providers: [MarketService],
 })
 export class MarketPage implements OnInit {
   products$: Observable<Product[]>;
+  filteredProducts$: Observable<Product[]>;
+  searchTerm$: BehaviorSubject<string> = new BehaviorSubject('');
+  _searchTerm: string = '';
   livePrices: { [symbol: string]: PriceTick } = {};
+
+  get searchTerm() {
+    return this._searchTerm;
+  }
+  set searchTerm(val: string) {
+    this._searchTerm = val;
+    this.searchTerm$.next(val);
+  }
 
   constructor(
     private marketService: MarketService,
     private priceFluctuation: PriceFluctuationService
   ) {
     this.products$ = this.marketService.products$;
+    this.filteredProducts$ = combineLatest([
+      this.products$,
+      this.searchTerm$
+    ]).pipe(
+      map(([products, searchTerm]) => {
+        if (!searchTerm) return products;
+        const term = searchTerm.toLowerCase();
+        return products.filter(p =>
+          p.name.toLowerCase().includes(term) ||
+          p.symbol.toLowerCase().includes(term)
+        );
+      })
+    );
   }
 
   async ngOnInit() {
