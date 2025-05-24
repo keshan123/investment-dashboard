@@ -1,0 +1,7 @@
+{
+  "name": "stake-test-dashboard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
