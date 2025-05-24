@@ -7,7 +7,6 @@
 - Shows symbol, amount, percentage of portfolio, live-updating prices, total value, initial value, and percentage change since purchase.
 - Uses a donut chart to visualize portfolio allocation, with the total value in the center, updating live.
 - Each investment row is styled with asset info, price info, investment info, and a colored bar matching the donut chart.
-- Clicking an item navigates to the Product Detail page.
 - List uses `trackBy` and `<div>`s to prevent scroll jumps on price updates.
 - Back button on Product Detail uses browser history.
 - Cash balance ("Wallet") is displayed in the toolbar, updates live, and turns red if negative.
