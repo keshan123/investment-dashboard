@@ -1,0 +1,15 @@
+ion-item.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+ion-item.fade-in:nth-child(1) { animation-delay: 0.05s; }
+ion-item.fade-in:nth-child(2) { animation-delay: 0.10s; }
+ion-item.fade-in:nth-child(3) { animation-delay: 0.15s; }
+ion-item.fade-in:nth-child(4) { animation-delay: 0.20s; }
+ion-item.fade-in:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}

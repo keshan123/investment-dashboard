@@ -7,23 +7,27 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Search Bar -->
-  <div style="padding: 16px 0 16px;">
-    <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search by name or symbol" debounce="200"></ion-searchbar>
+  <div *ngIf="loading" style="display: flex; justify-content: center; align-items: center; height: 60vh;">
+    <ion-spinner name="crescent"></ion-spinner>
   </div>
-
-  <ion-list *ngIf="filteredProducts$ | async as products">
-    <ion-item *ngFor="let product of products" [routerLink]="['/market', product.symbol]">
-      <ion-label>
-        <h2>{{ product.name }}</h2>
-        <p>Symbol: {{ product.symbol }}</p>
-        <p>
-          Price:
-          <span [style.color]="getPriceColor(product.symbol)">
-            {{ getPriceTick(product.symbol)?.price | number:'1.2-2' }}
-          </span>
-        </p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ng-container *ngIf="!loading">
+    <!-- Search Bar -->
+    <div style="padding: 16px 0 16px;">
+      <ion-searchbar [(ngModel)]="searchTerm" placeholder="Search by name or symbol" debounce="200"></ion-searchbar>
+    </div>
+    <ion-list *ngIf="filteredProducts$ | async as products" [@listAnimation]="products.length">
+      <ion-item *ngFor="let product of products; trackBy: trackBySymbol" [routerLink]="['/market', product.symbol]">
+        <ion-label>
+          <h2>{{ product.name }}</h2>
+          <p>Symbol: {{ product.symbol }}</p>
+          <p>
+            Price:
+            <span [style.color]="getPriceColor(product.symbol)">
+              {{ getPriceTick(product.symbol)?.price | number:'1.2-2' }}
+            </span>
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
 </ion-content>

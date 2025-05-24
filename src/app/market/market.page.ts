@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 
 export interface Product {
   id: string;
@@ -18,6 +19,7 @@ export interface Product {
 export class MarketService {
   private productsSubject = new BehaviorSubject<Product[]>([]);
   public products$ = this.productsSubject.asObservable();
+  public loading$ = new BehaviorSubject<boolean>(true);
 
   constructor() {
     this.loadProducts();
@@ -41,6 +43,7 @@ export class MarketService {
       } : null;
     }).filter(Boolean);
     this.productsSubject.next(products);
+    this.loading$.next(false);
   }
 }
 
@@ -57,6 +60,22 @@ export class MarketService {
     IonicModule,
   ],
   providers: [MarketService],
+  animations: [
+    trigger('listAnimation', [
+      transition('* <=> *', [
+        query(
+          ':enter',
+          [
+            style({ opacity: 0, transform: 'translateY(10px)' }),
+            stagger('70ms', [
+              animate('0.5s cubic-bezier(.35,0,.25,1)', style({ opacity: 1, transform: 'none' }))
+            ])
+          ],
+          { optional: true }
+        )
+      ])
+    ])
+  ]
 })
 export class MarketPage implements OnInit {
   products$: Observable<Product[]>;
@@ -64,6 +83,7 @@ export class MarketPage implements OnInit {
   searchTerm$: BehaviorSubject<string> = new BehaviorSubject('');
   _searchTerm: string = '';
   livePrices: { [symbol: string]: PriceTick } = {};
+  public loading = true;
 
   get searchTerm() {
     return this._searchTerm;
@@ -91,6 +111,9 @@ export class MarketPage implements OnInit {
         );
       })
     );
+    this.marketService.loading$.subscribe(loading => {
+      this.loading = loading;
+    });
   }
 
   async ngOnInit() {
@@ -114,5 +137,9 @@ export class MarketPage implements OnInit {
     if (tick.price > tick.prevPrice) return 'green';
     if (tick.price < tick.prevPrice) return 'red';
     return '';
+  }
+
+  trackBySymbol(index: number, product: Product) {
+    return product.symbol;
   }
 }

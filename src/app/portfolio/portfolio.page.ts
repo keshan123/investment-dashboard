@@ -1,7 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
