@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Market
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Market</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list *ngIf="products$ | async as products">
+    <ion-item *ngFor="let product of products" [routerLink]="['/market', product.symbol]">
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>Symbol: {{ product.symbol }}</p>
+        <p>Price: {{ product.price | number:'1.2-2' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

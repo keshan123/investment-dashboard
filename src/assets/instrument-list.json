@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "fc2657f9-bfa5-4430-8bb1-c117c0fc2155",
+    "name": "Nike Inc. - Class D",
+    "symbol": "NKEL",
+    "description": "Nike Inc. - Class D is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f1692eca-b3f0-45d6-860a-02e5a1f84407",
+    "name": "SHKN Investment Fund",
+    "symbol": "SHKN",
+    "description": "SHKN Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "efe8eacb-65b4-4ae8-aa92-e15936982c13",
+    "name": "Visa Inc. - Class B - Class J",
+    "symbol": "VJL",
+    "description": "Visa Inc. - Class B - Class J is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "fdbd70d2-2e61-4be1-b3cc-1000942ebe48",
+    "name": "IRRNH Investment Fund",
+    "symbol": "IRRNH",
+    "description": "IRRNH Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "daa5d891-05fc-4302-9074-d558755299d3",
+    "name": "Boeing Co. - Class C",
+    "symbol": "BAJ",
+    "description": "Boeing Co. - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "dbfe2458-8e4d-4a22-9e9c-2b311ab19689",
+    "name": "Lyft Inc. - Class Z",
+    "symbol": "LYFTI",
+    "description": "Lyft Inc. - Class Z is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9c4dc3f8-cd10-4181-861d-67d1293b920d",
+    "name": "NRCY Investment Fund",
+    "symbol": "NRCY",
+    "description": "NRCY Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "c02f9e19-bb8a-4b9a-a5d8-cf98b9c45c68",
+    "name": "Visa Inc.",
+    "symbol": "V",
+    "description": "Visa Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "5b15c3a9-3e15-40ed-9f0d-24fee14422f6",
+    "name": "Walmart Inc.",
+    "symbol": "WMT",
+    "description": "Walmart Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "1e3f7cdc-941e-4b92-b9d8-efa025558134",
+    "name": "GSMC Investment Fund",
+    "symbol": "GSMC",
+    "description": "GSMC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "704e3b2f-f852-4156-85e7-44feb71c48bf",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D - Class B",
+    "symbol": "KOPYQI",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D - Class B is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "5cf72504-74de-43e0-92df-91e35a460726",
+    "name": "KZAWP Investment Fund",
+    "symbol": "KZAWP",
+    "description": "KZAWP Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "af528393-5559-46b4-8c2b-d6520a62a525",
+    "name": "Alibaba Group Holding Ltd. - Class V - Class I",
+    "symbol": "BABAJK",
+    "description": "Alibaba Group Holding Ltd. - Class V - Class I is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "41c2d4d8-eb3c-422d-8e20-bf1389b45184",
+    "name": "WXKOQ Investment Fund",
+    "symbol": "WXKOQ",
+    "description": "WXKOQ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "f79643b9-219e-4a45-a3aa-65a39ddb8e3b",
+    "name": "GLRXQ Investment Fund",
+    "symbol": "GLRXQ",
+    "description": "GLRXQ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "607089d0-266d-461b-80e8-4a089347508c",
+    "name": "Alibaba Group Holding Ltd. - Class J",
+    "symbol": "BABAG",
+    "description": "Alibaba Group Holding Ltd. - Class J is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "caf85090-5a6b-469d-a0f5-3bd9999b0aa1",
+    "name": "Walmart Inc. - Class C - Class L - Class U",
+    "symbol": "WMTSTR",
+    "description": "Walmart Inc. - Class C - Class L - Class U is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "ff40e7bf-8713-47c7-be22-79eaa548ace7",
+    "name": "ZIAJ Investment Fund",
+    "symbol": "ZIAJ",
+    "description": "ZIAJ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "db77c27e-f3c7-430b-a68b-4fb7c967f227",
+    "name": "Netflix Inc. - Class K",
+    "symbol": "NFLXV",
+    "description": "Netflix Inc. - Class K is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "565011b1-7b90-47df-bb96-46e6bb631d79",
+    "name": "Visa Inc. - Class B",
+    "symbol": "VJ",
+    "description": "Visa Inc. - Class B is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "0cd9a7bf-961f-412b-9750-4573a7241887",
+    "name": "LMYT Investment Fund",
+    "symbol": "LMYT",
+    "description": "LMYT Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "efccc8f0-839c-41a7-aeb4-800d36fb5020",
+    "name": "QECNB Investment Fund",
+    "symbol": "QECNB",
+    "description": "QECNB Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "db365959-1009-4885-9da9-e02bc7c7b368",
+    "name": "Costco Wholesale Corp. - Class M",
+    "symbol": "COSTG",
+    "description": "Costco Wholesale Corp. - Class M is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "0e7b89c8-7c86-43ca-b5f6-029bb28fd339",
+    "name": "VJU Investment Fund",
+    "symbol": "VJU",
+    "description": "VJU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "bdfa27ba-193b-43f9-a69c-20626a5f4d19",
+    "name": "ENQ Investment Fund",
+    "symbol": "ENQ",
+    "description": "ENQ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "6bce8d68-fe2d-4494-89a1-719d11047bf1",
+    "name": "Netflix Inc. - Class C",
+    "symbol": "NFLXW",
+    "description": "Netflix Inc. - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "af3855e9-a223-455c-a4f1-912bc320e22a",
+    "name": "IBGM Investment Fund",
+    "symbol": "IBGM",
+    "description": "IBGM Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "35e3fda1-6002-40de-ae91-04ee0e20c8a5",
+    "name": "FONB Investment Fund",
+    "symbol": "FONB",
+    "description": "FONB Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "8880438f-96b5-422f-bb7b-a51e928b3ece",
+    "name": "ZKVB Investment Fund",
+    "symbol": "ZKVB",
+    "description": "ZKVB Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "806b2e10-3246-4e49-a909-5bf6b896d843",
+    "name": "Verizon Communications Inc.",
+    "symbol": "VZ",
+    "description": "Verizon Communications Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "96d10dd2-ded5-4d2a-b338-2fde030fa955",
+    "name": "Alphabet Inc. (Google)",
+    "symbol": "GOOGL",
+    "description": "Alphabet Inc. provides online advertising services through Google and other properties.",
+    "category": "Equity"
+  },
+  {
+    "id": "d59c8a82-da5b-4f69-abed-3fa2b19151d3",
+    "name": "GTJKP Investment Fund",
+    "symbol": "GTJKP",
+    "description": "GTJKP Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "7205c20c-b7a2-4ba1-97da-69da98f75c87",
+    "name": "Walmart Inc. - Class C - Class U - Class A",
+    "symbol": "WMTSEC",
+    "description": "Walmart Inc. - Class C - Class U - Class A is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "b89f8991-6a64-4ab2-9250-d54b3fa153a3",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D",
+    "symbol": "KOPYQ",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "a1d77600-c5fa-4edd-83ea-39906dffa416",
+    "name": "Advanced Micro Devices Inc.",
+    "symbol": "AMD",
+    "description": "Advanced Micro Devices Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4f6334d6-1dfd-48ea-8a33-34130417bb88",
+    "name": "PVA Investment Fund",
+    "symbol": "PVA",
+    "description": "PVA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "0d9fbf40-bd4c-4ea2-b885-d418de96dd4b",
+    "name": "PayPal Holdings Inc.",
+    "symbol": "PYPL",
+    "description": "PayPal Holdings Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "6120294f-ed64-4620-b8fa-6121386dc082",
+    "name": "CGEN Investment Fund",
+    "symbol": "CGEN",
+    "description": "CGEN Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "4acd07c2-8fb1-44d0-ab84-04a807c259ec",
+    "name": "Visa Inc. - Class B - Class S",
+    "symbol": "VJN",
+    "description": "Visa Inc. - Class B - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "6551c439-fc98-4b33-a67d-8856ebf97998",
+    "name": "Walt Disney Co. - Class S",
+    "symbol": "DISY",
+    "description": "Walt Disney Co. - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "2848cf47-2775-4ee0-ab5a-130cd5c7407d",
+    "name": "EMC Investment Fund",
+    "symbol": "EMC",
+    "description": "EMC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "805ca4fe-05d0-444b-b166-fc24a714fcde",
+    "name": "DKT Investment Fund",
+    "symbol": "DKT",
+    "description": "DKT Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "67007a4c-694d-44c3-b14a-7b7c44bc37f0",
+    "name": "Mastercard Inc.",
+    "symbol": "MA",
+    "description": "Mastercard Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "620972cb-8d41-4a56-8100-cad264e14f1b",
+    "name": "Amazon.com Inc. - Class R - Class W",
+    "symbol": "AMZNWF",
+    "description": "Amazon.com Inc. - Class R - Class W is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "eea98af1-451e-4fa2-b8fc-769ef01b89b8",
+    "name": "Boeing Co. - Class C - Class L",
+    "symbol": "BAJT",
+    "description": "Boeing Co. - Class C - Class L is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "7c9d134b-18ee-47cf-97f6-8083d658c075",
+    "name": "Walmart Inc. - Class C - Class L",
+    "symbol": "WMTST",
+    "description": "Walmart Inc. - Class C - Class L is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "525d6084-a9ca-4ac7-a16f-7a834df28d28",
+    "name": "Meta Platforms Inc. - Class F",
+    "symbol": "METAA",
+    "description": "Meta Platforms Inc. - Class F is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "45cd2359-cd63-426f-bbac-fcc8d182a950",
+    "name": "Salesforce Inc. - Class C",
+    "symbol": "CRMV",
+    "description": "Salesforce Inc. - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "fc769327-63cd-4242-a525-8a3d551a1d89",
+    "name": "TVOJ Investment Fund",
+    "symbol": "TVOJ",
+    "description": "TVOJ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "1e86a882-4ca7-40a8-b3f3-023e70044b85",
+    "name": "ZNLRI Investment Fund",
+    "symbol": "ZNLRI",
+    "description": "ZNLRI Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "b9abcf54-d812-46eb-b111-e814f0ecb1c4",
+    "name": "RSHH Investment Fund",
+    "symbol": "RSHH",
+    "description": "RSHH Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "6fa976a4-f1a8-4dff-9b3f-0fdba1717fee",
+    "name": "HDIK Investment Fund",
+    "symbol": "HDIK",
+    "description": "HDIK Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "3ad904a0-8f48-43ec-857d-9510e3557076",
+    "name": "Shopify Inc.",
+    "symbol": "SHOP",
+    "description": "Shopify Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "6383e21c-1f74-4120-9f08-b86f782cad27",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D - Class I",
+    "symbol": "KOPYQF",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D - Class I is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "925f2390-7bfa-49be-8ab7-f9050e9ab5a8",
+    "name": "FVFD Investment Fund",
+    "symbol": "FVFD",
+    "description": "FVFD Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "ffc7c5bd-8c96-4136-9127-c6d01c636fd6",
+    "name": "GKJC Investment Fund",
+    "symbol": "GKJC",
+    "description": "GKJC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "69736a67-e0bf-44df-8fc2-d82450bc4cbc",
+    "name": "CPK Investment Fund",
+    "symbol": "CPK",
+    "description": "CPK Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "14ce0793-a43e-41e6-a963-b618c99759fe",
+    "name": "RXSX Investment Fund",
+    "symbol": "RXSX",
+    "description": "RXSX Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "73a3329d-afca-4326-b216-a56acf374863",
+    "name": "IFI Investment Fund",
+    "symbol": "IFI",
+    "description": "IFI Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "a9ef648b-1abd-47fb-b55a-90a464f04a39",
+    "name": "XGD Investment Fund",
+    "symbol": "XGD",
+    "description": "XGD Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "d4504508-5f43-45d1-9bdd-3d945b138a20",
+    "name": "Coca-Cola Co. - Class D - Class F - Class Y",
+    "symbol": "KOPYH",
+    "description": "Coca-Cola Co. - Class D - Class F - Class Y is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "363fcd65-e45d-49ce-a335-1bf016c20c53",
+    "name": "DZWW Investment Fund",
+    "symbol": "DZWW",
+    "description": "DZWW Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "d797f65b-ab18-45e4-9062-31c8448bac15",
+    "name": "TYDJ Investment Fund",
+    "symbol": "TYDJ",
+    "description": "TYDJ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "9d92f925-e656-4465-9afb-ae2d9dd0554c",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D - Class X",
+    "symbol": "KOPYQS",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D - Class X is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "91c670d6-a33d-4983-8d38-f01c96e2d395",
+    "name": "Walmart Inc. - Class L",
+    "symbol": "WMTU",
+    "description": "Walmart Inc. - Class L is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "e014eb6e-8d7c-4d3e-9607-d7d034fc1e14",
+    "name": "Apple Inc.",
+    "symbol": "AAPL",
+    "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, and accessories.",
+    "category": "Equity"
+  },
+  {
+    "id": "0ae3d32f-4736-44dd-8536-5e715d57f6eb",
+    "name": "SDNL Investment Fund",
+    "symbol": "SDNL",
+    "description": "SDNL Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "ac48d6a3-4674-48aa-a134-7ce3268c0c1d",
+    "name": "YKA Investment Fund",
+    "symbol": "YKA",
+    "description": "YKA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "70c9be48-4d1c-4697-b604-2500a7306f73",
+    "name": "Lyft Inc. - Class Z - Class J",
+    "symbol": "LYFTIT",
+    "description": "Lyft Inc. - Class Z - Class J is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9266287a-0745-4d05-a2c8-08b46e1a230b",
+    "name": "UITKO Investment Fund",
+    "symbol": "UITKO",
+    "description": "UITKO Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "a1250222-925d-45f9-943a-ac24a9cbc4ae",
+    "name": "Alibaba Group Holding Ltd. - Class V - Class S",
+    "symbol": "BABAJS",
+    "description": "Alibaba Group Holding Ltd. - Class V - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f8a43832-5087-49e6-8361-3f05f58d627e",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D - Class S",
+    "symbol": "KOPYQE",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "ae07bb13-e6ac-4b0d-b3df-21aa4a65eead",
+    "name": "YUX Investment Fund",
+    "symbol": "YUX",
+    "description": "YUX Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "2685e3d3-3a25-474c-8a30-91dfd7c8a674",
+    "name": "FAGUR Investment Fund",
+    "symbol": "FAGUR",
+    "description": "FAGUR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "4b968d2a-3753-4e51-909f-9d165bb91cf7",
+    "name": "Alibaba Group Holding Ltd. - Class I",
+    "symbol": "BABAG",
+    "description": "Alibaba Group Holding Ltd. - Class I is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "90431b34-f235-4f7f-a898-3488ccf56b6c",
+    "name": "Walmart Inc. - Class C - Class X - Class O",
+    "symbol": "WMTSBH",
+    "description": "Walmart Inc. - Class C - Class X - Class O is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "40f9c97e-2c10-44ce-80ee-5f4299cfbb00",
+    "name": "NDFOZ Investment Fund",
+    "symbol": "NDFOZ",
+    "description": "NDFOZ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "53349fc1-e28c-421f-b469-df8f9a12076b",
+    "name": "YHCV Investment Fund",
+    "symbol": "YHCV",
+    "description": "YHCV Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "da6d7692-3ff8-414e-90a0-23fc24bc6a41",
+    "name": "Coca-Cola Co.",
+    "symbol": "KO",
+    "description": "Coca-Cola Co. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "11f89471-03a4-4d09-a820-18dd3ab5774c",
+    "name": "PepsiCo Inc. - Class A - Class J",
+    "symbol": "PEPWK",
+    "description": "PepsiCo Inc. - Class A - Class J is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9f783887-e280-4991-8eb8-5743644e54f6",
+    "name": "Visa Inc. - Class W",
+    "symbol": "VL",
+    "description": "Visa Inc. - Class W is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f85cb4c3-ed31-4191-98b2-58353994ff22",
+    "name": "Mastercard Inc. - Class S",
+    "symbol": "MAC",
+    "description": "Mastercard Inc. - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "dc537f25-b7b3-49a1-9076-773c8ac80fdd",
+    "name": "OAUVC Investment Fund",
+    "symbol": "OAUVC",
+    "description": "OAUVC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "6ff9df34-9748-452f-ad5b-14cf7394aa0b",
+    "name": "Boeing Co.",
+    "symbol": "BA",
+    "description": "Boeing Co. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "7fd8911b-95d4-456c-872f-4b9053aed101",
+    "name": "MIG Investment Fund",
+    "symbol": "MIG",
+    "description": "MIG Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "6359f7b0-94da-48de-a361-a7aae2004010",
+    "name": "Walt Disney Co. - Class S",
+    "symbol": "DISI",
+    "description": "Walt Disney Co. - Class S is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9a2f7caa-4c82-417e-8d31-a7bd0cdb79e9",
+    "name": "VDHET Investment Fund",
+    "symbol": "VDHET",
+    "description": "VDHET Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "d5675ab9-b719-4b15-b52a-fe9b8a984be2",
+    "name": "Alibaba Group Holding Ltd. - Class V - Class G",
+    "symbol": "BABAJN",
+    "description": "Alibaba Group Holding Ltd. - Class V - Class G is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "12650083-e1a2-40ef-9316-7beddc41b4ec",
+    "name": "Alibaba Group Holding Ltd. - Class V",
+    "symbol": "BABAJ",
+    "description": "Alibaba Group Holding Ltd. - Class V is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "25a53eb7-b400-4a36-838d-136c8cee89c8",
+    "name": "FOQF Investment Fund",
+    "symbol": "FOQF",
+    "description": "FOQF Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "f1184832-44d8-4550-b17f-78bf2ba8887e",
+    "name": "Microsoft Corporation",
+    "symbol": "MSFT",
+    "description": "Microsoft develops, licenses, and supports a wide range of software products, services, and devices.",
+    "category": "Equity"
+  },
+  {
+    "id": "332b70ff-ff3c-4ed0-991e-a5d6e68942bf",
+    "name": "FQSE Investment Fund",
+    "symbol": "FQSE",
+    "description": "FQSE Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "3677f662-6d33-44e5-8cde-b95c5d271fc6",
+    "name": "YXE Investment Fund",
+    "symbol": "YXE",
+    "description": "YXE Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "80f3c185-7658-40e7-a93c-955bbe0690bd",
+    "name": "General Electric Co.",
+    "symbol": "GE",
+    "description": "General Electric Co. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "a3e54181-40bb-4fac-a6d7-d94cb813166b",
+    "name": "WDG Investment Fund",
+    "symbol": "WDG",
+    "description": "WDG Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "54f9c870-9387-461e-8c32-17799728ba34",
+    "name": "Walt Disney Co. - Class R",
+    "symbol": "DISR",
+    "description": "Walt Disney Co. - Class R is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "fb9f0e04-cacb-44f6-ab53-8258b10d8f1c",
+    "name": "OTFWG Investment Fund",
+    "symbol": "OTFWG",
+    "description": "OTFWG Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "265aaf52-e871-45c4-bc02-fd75c3902318",
+    "name": "EHN Investment Fund",
+    "symbol": "EHN",
+    "description": "EHN Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "d2784c31-63bd-427a-a454-bc671f874ce0",
+    "name": "Coca-Cola Co. - Class D - Class A",
+    "symbol": "KOPV",
+    "description": "Coca-Cola Co. - Class D - Class A is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "2315414d-d037-4fcc-934f-43565c121ba6",
+    "name": "XXSHO Investment Fund",
+    "symbol": "XXSHO",
+    "description": "XXSHO Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "8ff4e2eb-6b71-40ab-b7b0-eb4cfe993c2c",
+    "name": "Costco Wholesale Corp.",
+    "symbol": "COST",
+    "description": "Costco Wholesale Corp. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "6ab92e32-99a3-4532-9c6e-43ceca48035a",
+    "name": "AHR Investment Fund",
+    "symbol": "AHR",
+    "description": "AHR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "66cef669-315e-4a7d-bb2f-b03fc5c71fdc",
+    "name": "Netflix Inc. - Class C - Class M",
+    "symbol": "NFLXWD",
+    "description": "Netflix Inc. - Class C - Class M is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4722e421-1808-4268-a619-538a46c59b1f",
+    "name": "Walt Disney Co.",
+    "symbol": "DIS",
+    "description": "Walt Disney Co. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "973c04b9-703c-4fcf-ad98-999302c3c9e9",
+    "name": "QXKX Investment Fund",
+    "symbol": "QXKX",
+    "description": "QXKX Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "d47d2591-cdd7-49b4-b8dc-951f252ee983",
+    "name": "JTP Investment Fund",
+    "symbol": "JTP",
+    "description": "JTP Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "be012158-8c33-4f26-a222-4bcfb4f1cb5a",
+    "name": "Costco Wholesale Corp. - Class H - Class F",
+    "symbol": "COSTTH",
+    "description": "Costco Wholesale Corp. - Class H - Class F is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "ef9a6db8-c3c4-448c-a786-b36073036043",
+    "name": "WDBR Investment Fund",
+    "symbol": "WDBR",
+    "description": "WDBR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "13bf4eab-f5fc-403a-b37d-fef58901e27e",
+    "name": "Oracle Corporation",
+    "symbol": "ORCL",
+    "description": "Oracle Corporation is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "e99a6a1a-fedb-4c92-8e34-25e88e887033",
+    "name": "EBO Investment Fund",
+    "symbol": "EBO",
+    "description": "EBO Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "be9922ea-a20c-4b18-8cd6-a21a7f3b9983",
+    "name": "SCYU Investment Fund",
+    "symbol": "SCYU",
+    "description": "SCYU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "b10c493e-b81c-43ba-8474-b5e8b3ce933d",
+    "name": "WENPU Investment Fund",
+    "symbol": "WENPU",
+    "description": "WENPU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "ccb15aad-b237-4a6a-8a5a-552ff996f508",
+    "name": "Boeing Co. - Class V",
+    "symbol": "BAZ",
+    "description": "Boeing Co. - Class V is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "b31b148a-70c1-4e1b-b0f9-84c9446a2e6b",
+    "name": "Visa Inc. - Class B - Class Q",
+    "symbol": "VJH",
+    "description": "Visa Inc. - Class B - Class Q is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "fdc08b4c-86ce-4061-a4c1-b1edf86c8e99",
+    "name": "FJXI Investment Fund",
+    "symbol": "FJXI",
+    "description": "FJXI Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "04f04c32-3fae-42a8-915d-eef43b3a98b0",
+    "name": "CFRPV Investment Fund",
+    "symbol": "CFRPV",
+    "description": "CFRPV Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "bc393dc4-7c8c-4e54-9f81-5fdfe93788f3",
+    "name": "VZFV Investment Fund",
+    "symbol": "VZFV",
+    "description": "VZFV Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "158ad238-8c67-4a13-88a4-17e3b15bcd72",
+    "name": "PIPQE Investment Fund",
+    "symbol": "PIPQE",
+    "description": "PIPQE Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "c52b23c4-f4c9-4b51-b48f-edde6c240385",
+    "name": "Walmart Inc. - Class C",
+    "symbol": "WMTS",
+    "description": "Walmart Inc. - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f7e174c6-c0dc-4276-9d85-829981ce51ef",
+    "name": "GPDS Investment Fund",
+    "symbol": "GPDS",
+    "description": "GPDS Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "04815c5c-3794-4820-ac70-068757ff5438",
+    "name": "Netflix Inc.",
+    "symbol": "NFLX",
+    "description": "Netflix Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "cb23b917-be9c-446e-94b8-65d180eda8e5",
+    "name": "Lyft Inc.",
+    "symbol": "LYFT",
+    "description": "Lyft Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9c528396-148a-45a4-877e-69778cb79696",
+    "name": "GTF Investment Fund",
+    "symbol": "GTF",
+    "description": "GTF Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "a6f98456-2e4d-4e88-aac2-18310c456707",
+    "name": "PepsiCo Inc. - Class Y",
+    "symbol": "PEPU",
+    "description": "PepsiCo Inc. - Class Y is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "2c9c769f-e654-4a48-8346-a96f68eb8f25",
+    "name": "DOJWS Investment Fund",
+    "symbol": "DOJWS",
+    "description": "DOJWS Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "7977eb34-780c-4c52-a80e-37922b3add55",
+    "name": "CPJDA Investment Fund",
+    "symbol": "CPJDA",
+    "description": "CPJDA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "9c29d592-91e4-4bf1-b438-54c545bd8306",
+    "name": "Advanced Micro Devices Inc. - Class Y",
+    "symbol": "AMDV",
+    "description": "Advanced Micro Devices Inc. - Class Y is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "677a5988-de56-4c62-9081-b62073ef7e31",
+    "name": "AT&T Inc. - Class E",
+    "symbol": "TU",
+    "description": "AT&T Inc. - Class E is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "027eb322-5b65-4ad7-92f8-ff3bf6a01e73",
+    "name": "DQO Investment Fund",
+    "symbol": "DQO",
+    "description": "DQO Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "4a50ec28-5698-475e-9e4d-d8a8400efc7c",
+    "name": "Lyft Inc. - Class C",
+    "symbol": "LYFTG",
+    "description": "Lyft Inc. - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "a2aff149-2f1f-4f6f-b937-23e7bebf7ad1",
+    "name": "Nike Inc. - Class Y",
+    "symbol": "NKEC",
+    "description": "Nike Inc. - Class Y is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "93db7df6-f8ef-4393-9baa-5486e883b363",
+    "name": "Walmart Inc. - Class C - Class X",
+    "symbol": "WMTSB",
+    "description": "Walmart Inc. - Class C - Class X is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f24d367d-d9de-4e56-be14-51c03fa96c97",
+    "name": "OAM Investment Fund",
+    "symbol": "OAM",
+    "description": "OAM Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "03d0de07-a060-4749-9d11-e3f8a06e0005",
+    "name": "Visa Inc. - Class B - Class Q - Class F",
+    "symbol": "VJHI",
+    "description": "Visa Inc. - Class B - Class Q - Class F is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "c770fc31-09aa-4961-a8a7-ef3883ddfe72",
+    "name": "DWM Investment Fund",
+    "symbol": "DWM",
+    "description": "DWM Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "4b3f509a-6f60-4281-b185-8aa368f2151d",
+    "name": "IQC Investment Fund",
+    "symbol": "IQC",
+    "description": "IQC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "b2623fd6-cdaf-4ea6-9fca-f61dca8faeb3",
+    "name": "Alibaba Group Holding Ltd.",
+    "symbol": "BABA",
+    "description": "Alibaba Group Holding Ltd. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4f3c7b46-53fd-444e-a3bd-99d24272b32b",
+    "name": "LVYQR Investment Fund",
+    "symbol": "LVYQR",
+    "description": "LVYQR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "236769a1-820c-4568-8ded-ab7339f26052",
+    "name": "QWG Investment Fund",
+    "symbol": "QWG",
+    "description": "QWG Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "468ac38f-6292-477c-934f-1e149c908125",
+    "name": "Uber Technologies Inc.",
+    "symbol": "UBER",
+    "description": "Uber Technologies Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "dcc62322-5831-4524-a691-4aff20cdec7c",
+    "name": "NVIDIA Corporation",
+    "symbol": "NVDA",
+    "description": "NVIDIA Corporation is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4856b629-8733-4fc8-80d8-445575216d97",
+    "name": "XAUXW Investment Fund",
+    "symbol": "XAUXW",
+    "description": "XAUXW Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "a2bd222b-445b-49fc-8cd1-7f437dd56b60",
+    "name": "Costco Wholesale Corp. - Class H - Class C",
+    "symbol": "COSTTH",
+    "description": "Costco Wholesale Corp. - Class H - Class C is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "18942e7c-9906-42d3-8b8f-36a884af6ff0",
+    "name": "RVY Investment Fund",
+    "symbol": "RVY",
+    "description": "RVY Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "58f566e8-0674-4020-8749-af44cc60f6d7",
+    "name": "Walmart Inc. - Class C - Class U",
+    "symbol": "WMTSE",
+    "description": "Walmart Inc. - Class C - Class U is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "c6436ff9-a346-420f-bba8-426dbac4fcdb",
+    "name": "JWWYS Investment Fund",
+    "symbol": "JWWYS",
+    "description": "JWWYS Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "78006ab8-0d2a-4abb-8873-bc04d81e4803",
+    "name": "YKSDR Investment Fund",
+    "symbol": "YKSDR",
+    "description": "YKSDR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "c293b385-63f6-4291-a2e5-611d0afced0c",
+    "name": "Meta Platforms Inc.",
+    "symbol": "META",
+    "description": "Meta Platforms Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "e6470101-70ff-42e2-b9b4-6bc2127d45e5",
+    "name": "TISZ Investment Fund",
+    "symbol": "TISZ",
+    "description": "TISZ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "b8f3fff4-c310-4fa4-b263-d67647bbd097",
+    "name": "ATP Investment Fund",
+    "symbol": "ATP",
+    "description": "ATP Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "d932e28e-5c8b-4540-9403-a39a6a73f7a9",
+    "name": "Alibaba Group Holding Ltd. - Class V - Class B",
+    "symbol": "BABAJM",
+    "description": "Alibaba Group Holding Ltd. - Class V - Class B is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "12c23f73-a121-4378-aad1-9df144d3e956",
+    "name": "ZHH Investment Fund",
+    "symbol": "ZHH",
+    "description": "ZHH Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "4b005def-c7d1-4f0c-b651-470f535b362b",
+    "name": "Coca-Cola Co. - Class D - Class F",
+    "symbol": "KOPY",
+    "description": "Coca-Cola Co. - Class D - Class F is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "c9f216f7-6ca6-435e-8206-f18d195b8436",
+    "name": "Coca-Cola Co. - Class D",
+    "symbol": "KOP",
+    "description": "Coca-Cola Co. - Class D is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "e6f36169-d4c6-4586-90aa-4fae07109bc8",
+    "name": "Amazon.com Inc. - Class R",
+    "symbol": "AMZNW",
+    "description": "Amazon.com Inc. - Class R is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "7fec3d6f-db3d-4230-98d2-7afaf14c1c53",
+    "name": "Lyft Inc. - Class Z - Class Z",
+    "symbol": "LYFTIY",
+    "description": "Lyft Inc. - Class Z - Class Z is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "43a9d382-d474-4bd5-928c-7c55d03bc320",
+    "name": "EATA Investment Fund",
+    "symbol": "EATA",
+    "description": "EATA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "1f05059d-d278-4684-9455-2fd499f27b66",
+    "name": "MYNND Investment Fund",
+    "symbol": "MYNND",
+    "description": "MYNND Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "9e2930fd-a8c4-4e38-b8db-e090c980bf72",
+    "name": "Walt Disney Co. - Class S - Class I - Class J",
+    "symbol": "DISIZG",
+    "description": "Walt Disney Co. - Class S - Class I - Class J is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "dbe6ca0b-306a-4e38-8485-3c50cf547c87",
+    "name": "YBHR Investment Fund",
+    "symbol": "YBHR",
+    "description": "YBHR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "914b6c38-cd50-4af1-8874-1da1e1060965",
+    "name": "UQR Investment Fund",
+    "symbol": "UQR",
+    "description": "UQR Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "bbb4293e-2db1-4c5b-b236-f479537e77a2",
+    "name": "ZIU Investment Fund",
+    "symbol": "ZIU",
+    "description": "ZIU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "c0c49f42-1020-4838-8962-1d19b4e0b271",
+    "name": "PepsiCo Inc.",
+    "symbol": "PEP",
+    "description": "PepsiCo Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f03e9cb2-6901-4187-851d-d252ca2deca4",
+    "name": "Microsoft Corporation - Class X",
+    "symbol": "MSFTH",
+    "description": "Microsoft Corporation - Class X is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "3c70ee00-d44b-4410-963e-f186c8ed4f77",
+    "name": "PJN Investment Fund",
+    "symbol": "PJN",
+    "description": "PJN Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "d9a4b567-aa68-438b-93c9-69b6d6f31b2d",
+    "name": "Amazon.com Inc.",
+    "symbol": "AMZN",
+    "description": "Amazon.com Inc. engages in the retail sale of consumer products and subscriptions through online and physical stores.",
+    "category": "Equity"
+  },
+  {
+    "id": "56514f1a-0dc7-4d02-8542-43426b9c6434",
+    "name": "Advanced Micro Devices Inc. - Class V",
+    "symbol": "AMDT",
+    "description": "Advanced Micro Devices Inc. - Class V is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "3832b4c7-5838-464a-8910-079d613fe6dd",
+    "name": "VJU Investment Fund",
+    "symbol": "VJU",
+    "description": "VJU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "a6015bd3-5bda-447d-93a4-b1eb07c70f11",
+    "name": "ZNGTF Investment Fund",
+    "symbol": "ZNGTF",
+    "description": "ZNGTF Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "43f61bfb-ee3a-42ac-99b1-6a95f3d870d9",
+    "name": "Advanced Micro Devices Inc. - Class Y - Class V",
+    "symbol": "AMDVR",
+    "description": "Advanced Micro Devices Inc. - Class Y - Class V is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "746d350d-a488-4080-be5b-93bca46ca7e2",
+    "name": "Nike Inc.",
+    "symbol": "NKE",
+    "description": "Nike Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "a1568dbf-c760-4f5c-a9ba-c8d9c8ad31d9",
+    "name": "Costco Wholesale Corp. - Class H",
+    "symbol": "COSTT",
+    "description": "Costco Wholesale Corp. - Class H is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "94c8c953-3e91-4622-9c44-91bb1d80c0c5",
+    "name": "Intel Corporation",
+    "symbol": "INTC",
+    "description": "Intel Corporation is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "b5307d81-5b30-44e9-b0b5-e45a8f331850",
+    "name": "Block Inc.",
+    "symbol": "SQ",
+    "description": "Block Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "d674853f-cd2e-4d6d-b4f0-404590d0afd7",
+    "name": "OXZB Investment Fund",
+    "symbol": "OXZB",
+    "description": "OXZB Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "65289b60-c13d-4a95-94c3-1c1120dfd1b1",
+    "name": "Verizon Communications Inc. - Class I",
+    "symbol": "VZD",
+    "description": "Verizon Communications Inc. - Class I is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4203b826-7d57-4cc4-ae13-f3d8948fea69",
+    "name": "QBXCJ Investment Fund",
+    "symbol": "QBXCJ",
+    "description": "QBXCJ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "2821f5e4-8b00-4dad-a924-cef1025299d2",
+    "name": "General Electric Co. - Class H",
+    "symbol": "GEK",
+    "description": "General Electric Co. - Class H is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "63491539-4086-48b4-9831-9d40ed7f35b2",
+    "name": "Walt Disney Co. - Class S - Class I",
+    "symbol": "DISIZ",
+    "description": "Walt Disney Co. - Class S - Class I is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "480f7358-3603-41ca-9c2a-6f5ff066584d",
+    "name": "AT&T Inc.",
+    "symbol": "T",
+    "description": "AT&T Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "4689d2cc-043b-4987-bf52-09e889ed40c2",
+    "name": "PWJ Investment Fund",
+    "symbol": "PWJ",
+    "description": "PWJ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "4330a46d-30a9-43d5-b746-0f6c3d464181",
+    "name": "JHLD Investment Fund",
+    "symbol": "JHLD",
+    "description": "JHLD Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "2166365f-ca9a-44d9-abc3-144b2932a76c",
+    "name": "XQC Investment Fund",
+    "symbol": "XQC",
+    "description": "XQC Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "dded480d-415f-4685-b84a-f7d45d8759af",
+    "name": "YDEYA Investment Fund",
+    "symbol": "YDEYA",
+    "description": "YDEYA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Income Fund"
+  },
+  {
+    "id": "8b92854e-0d77-4ede-8aea-170e0b6e4fb8",
+    "name": "PCEA Investment Fund",
+    "symbol": "PCEA",
+    "description": "PCEA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "826fefd5-187f-4d4e-9e8d-aea2376aabfe",
+    "name": "OZF Investment Fund",
+    "symbol": "OZF",
+    "description": "OZF Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Bond Fund"
+  },
+  {
+    "id": "9c9888b2-1f96-4ef2-9ca0-d833a357a5dc",
+    "name": "PepsiCo Inc. - Class A",
+    "symbol": "PEPW",
+    "description": "PepsiCo Inc. - Class A is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "9cb6b7af-2e10-4c9e-ac6a-e4281b11de77",
+    "name": "ZBP Investment Fund",
+    "symbol": "ZBP",
+    "description": "ZBP Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Sustainable Fund"
+  },
+  {
+    "id": "69054e0c-3093-4607-af74-3cdc97556d15",
+    "name": "IPQ Investment Fund",
+    "symbol": "IPQ",
+    "description": "IPQ Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Thematic Fund"
+  },
+  {
+    "id": "681acfd4-6a9b-4534-8c9b-2c0fffe5bfc7",
+    "name": "Costco Wholesale Corp. - Class H - Class C - Class R",
+    "symbol": "COSTTHS",
+    "description": "Costco Wholesale Corp. - Class H - Class C - Class R is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "5e9ee30a-0b9c-4683-812d-f21414b3b80c",
+    "name": "Nike Inc. - Class Y - Class D",
+    "symbol": "NKECI",
+    "description": "Nike Inc. - Class Y - Class D is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "381e4581-5935-41a8-b623-1452e7f179c1",
+    "name": "MUGQA Investment Fund",
+    "symbol": "MUGQA",
+    "description": "MUGQA Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "722e5971-688f-4528-a759-e39072efc74e",
+    "name": "QHFI Investment Fund",
+    "symbol": "QHFI",
+    "description": "QHFI Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "Commodity Fund"
+  },
+  {
+    "id": "efdbff18-16b9-4993-bf52-1e061c89ebfc",
+    "name": "JHBE Investment Fund",
+    "symbol": "JHBE",
+    "description": "JHBE Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "b9d54807-cc48-4ce9-88b1-7298cb69abf6",
+    "name": "DOMU Investment Fund",
+    "symbol": "DOMU",
+    "description": "DOMU Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  },
+  {
+    "id": "2443c04a-1abb-4a1d-826b-ef6037168b8a",
+    "name": "Tesla Inc.",
+    "symbol": "TSLA",
+    "description": "Tesla Inc. designs, develops, manufactures, and sells electric vehicles and energy storage products.",
+    "category": "Equity"
+  },
+  {
+    "id": "96787df5-80a7-4794-95ea-87912d431c39",
+    "name": "Coca-Cola Co. - Class D - Class F - Class D - Class X - Class Z",
+    "symbol": "KOPYQSP",
+    "description": "Coca-Cola Co. - Class D - Class F - Class D - Class X - Class Z is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "42cb5958-8215-49ce-b1a9-40471a4d6396",
+    "name": "Salesforce Inc.",
+    "symbol": "CRM",
+    "description": "Salesforce Inc. is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "860e647d-8277-4d02-982d-8b1fe5948abf",
+    "name": "Visa Inc. - Class B - Class Q - Class F - Class A",
+    "symbol": "VJHIX",
+    "description": "Visa Inc. - Class B - Class Q - Class F - Class A is a globally recognized company in the Equity sector.",
+    "category": "Equity"
+  },
+  {
+    "id": "f7054793-75ab-48f2-9b9a-65caa55953f4",
+    "name": "HJPRS Investment Fund",
+    "symbol": "HJPRS",
+    "description": "HJPRS Investment Fund provides diversified exposure to global and domestic markets.",
+    "category": "ETF"
+  }
+]

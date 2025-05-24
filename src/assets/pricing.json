@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "fc2657f9-bfa5-4430-8bb1-c117c0fc2155",
+    "symbol": "NKEL",
+    "price": 97.83
+  },
+  {
+    "id": "f1692eca-b3f0-45d6-860a-02e5a1f84407",
+    "symbol": "SHKN",
+    "price": 267.88
+  },
+  {
+    "id": "efe8eacb-65b4-4ae8-aa92-e15936982c13",
+    "symbol": "VJL",
+    "price": 227.02
+  },
+  {
+    "id": "fdbd70d2-2e61-4be1-b3cc-1000942ebe48",
+    "symbol": "IRRNH",
+    "price": 223.77
+  },
+  {
+    "id": "daa5d891-05fc-4302-9074-d558755299d3",
+    "symbol": "BAJ",
+    "price": 181.74
+  },
+  {
+    "id": "dbfe2458-8e4d-4a22-9e9c-2b311ab19689",
+    "symbol": "LYFTI",
+    "price": 13.83
+  },
+  {
+    "id": "9c4dc3f8-cd10-4181-861d-67d1293b920d",
+    "symbol": "NRCY",
+    "price": 294.66
+  },
+  {
+    "id": "c02f9e19-bb8a-4b9a-a5d8-cf98b9c45c68",
+    "symbol": "V",
+    "price": 231.5
+  },
+  {
+    "id": "5b15c3a9-3e15-40ed-9f0d-24fee14422f6",
+    "symbol": "WMT",
+    "price": 158.33
+  },
+  {
+    "id": "1e3f7cdc-941e-4b92-b9d8-efa025558134",
+    "symbol": "GSMC",
+    "price": 47.13
+  },
+  {
+    "id": "704e3b2f-f852-4156-85e7-44feb71c48bf",
+    "symbol": "KOPYQI",
+    "price": 65.55
+  },
+  {
+    "id": "5cf72504-74de-43e0-92df-91e35a460726",
+    "symbol": "KZAWP",
+    "price": 413.53
+  },
+  {
+    "id": "af528393-5559-46b4-8c2b-d6520a62a525",
+    "symbol": "BABAJK",
+    "price": 85.54
+  },
+  {
+    "id": "41c2d4d8-eb3c-422d-8e20-bf1389b45184",
+    "symbol": "WXKOQ",
+    "price": 175.53
+  },
+  {
+    "id": "f79643b9-219e-4a45-a3aa-65a39ddb8e3b",
+    "symbol": "GLRXQ",
+    "price": 265.37
+  },
+  {
+    "id": "607089d0-266d-461b-80e8-4a089347508c",
+    "symbol": "BABAG",
+    "price": 90.92
+  },
+  {
+    "id": "caf85090-5a6b-469d-a0f5-3bd9999b0aa1",
+    "symbol": "WMTSTR",
+    "price": 171.3
+  },
+  {
+    "id": "ff40e7bf-8713-47c7-be22-79eaa548ace7",
+    "symbol": "ZIAJ",
+    "price": 476.92
+  },
+  {
+    "id": "db77c27e-f3c7-430b-a68b-4fb7c967f227",
+    "symbol": "NFLXV",
+    "price": 347.73
+  },
+  {
+    "id": "565011b1-7b90-47df-bb96-46e6bb631d79",
+    "symbol": "VJ",
+    "price": 221.2
+  },
+  {
+    "id": "0cd9a7bf-961f-412b-9750-4573a7241887",
+    "symbol": "LMYT",
+    "price": 173.35
+  },
+  {
+    "id": "efccc8f0-839c-41a7-aeb4-800d36fb5020",
+    "symbol": "QECNB",
+    "price": 271.44
+  },
+  {
+    "id": "db365959-1009-4885-9da9-e02bc7c7b368",
+    "symbol": "COSTG",
+    "price": 544.23
+  },
+  {
+    "id": "0e7b89c8-7c86-43ca-b5f6-029bb28fd339",
+    "symbol": "VJU",
+    "price": 400.91
+  },
+  {
+    "id": "bdfa27ba-193b-43f9-a69c-20626a5f4d19",
+    "symbol": "ENQ",
+    "price": 410.66
+  },
+  {
+    "id": "6bce8d68-fe2d-4494-89a1-719d11047bf1",
+    "symbol": "NFLXW",
+    "price": 344.35
+  },
+  {
+    "id": "af3855e9-a223-455c-a4f1-912bc320e22a",
+    "symbol": "IBGM",
+    "price": 51.65
+  },
+  {
+    "id": "35e3fda1-6002-40de-ae91-04ee0e20c8a5",
+    "symbol": "FONB",
+    "price": 423.76
+  },
+  {
+    "id": "8880438f-96b5-422f-bb7b-a51e928b3ece",
+    "symbol": "ZKVB",
+    "price": 12.05
+  },
+  {
+    "id": "806b2e10-3246-4e49-a909-5bf6b896d843",
+    "symbol": "VZ",
+    "price": 37.51
+  },
+  {
+    "id": "96d10dd2-ded5-4d2a-b338-2fde030fa955",
+    "symbol": "GOOGL",
+    "price": 153.27
+  },
+  {
+    "id": "d59c8a82-da5b-4f69-abed-3fa2b19151d3",
+    "symbol": "GTJKP",
+    "price": 35.3
+  },
+  {
+    "id": "7205c20c-b7a2-4ba1-97da-69da98f75c87",
+    "symbol": "WMTSEC",
+    "price": 168.37
+  },
+  {
+    "id": "b89f8991-6a64-4ab2-9250-d54b3fa153a3",
+    "symbol": "KOPYQ",
+    "price": 63.09
+  },
+  {
+    "id": "a1d77600-c5fa-4edd-83ea-39906dffa416",
+    "symbol": "AMD",
+    "price": 114.37
+  },
+  {
+    "id": "4f6334d6-1dfd-48ea-8a33-34130417bb88",
+    "symbol": "PVA",
+    "price": 163.53
+  },
+  {
+    "id": "0d9fbf40-bd4c-4ea2-b885-d418de96dd4b",
+    "symbol": "PYPL",
+    "price": 64.88
+  },
+  {
+    "id": "6120294f-ed64-4620-b8fa-6121386dc082",
+    "symbol": "CGEN",
+    "price": 493.76
+  },
+  {
+    "id": "4acd07c2-8fb1-44d0-ab84-04a807c259ec",
+    "symbol": "VJN",
+    "price": 237.08
+  },
+  {
+    "id": "6551c439-fc98-4b33-a67d-8856ebf97998",
+    "symbol": "DISY",
+    "price": 101.41
+  },
+  {
+    "id": "2848cf47-2775-4ee0-ab5a-130cd5c7407d",
+    "symbol": "EMC",
+    "price": 344.91
+  },
+  {
+    "id": "805ca4fe-05d0-444b-b166-fc24a714fcde",
+    "symbol": "DKT",
+    "price": 474.54
+  },
+  {
+    "id": "67007a4c-694d-44c3-b14a-7b7c44bc37f0",
+    "symbol": "MA",
+    "price": 389.2
+  },
+  {
+    "id": "620972cb-8d41-4a56-8100-cad264e14f1b",
+    "symbol": "AMZNWF",
+    "price": 134.24
+  },
+  {
+    "id": "eea98af1-451e-4fa2-b8fc-769ef01b89b8",
+    "symbol": "BAJT",
+    "price": 180.84
+  },
+  {
+    "id": "7c9d134b-18ee-47cf-97f6-8083d658c075",
+    "symbol": "WMTST",
+    "price": 159.77
+  },
+  {
+    "id": "525d6084-a9ca-4ac7-a16f-7a834df28d28",
+    "symbol": "METAA",
+    "price": 301.69
+  },
+  {
+    "id": "45cd2359-cd63-426f-bbac-fcc8d182a950",
+    "symbol": "CRMV",
+    "price": 224.44
+  },
+  {
+    "id": "fc769327-63cd-4242-a525-8a3d551a1d89",
+    "symbol": "TVOJ",
+    "price": 484.71
+  },
+  {
+    "id": "1e86a882-4ca7-40a8-b3f3-023e70044b85",
+    "symbol": "ZNLRI",
+    "price": 425.72
+  },
+  {
+    "id": "b9abcf54-d812-46eb-b111-e814f0ecb1c4",
+    "symbol": "RSHH",
+    "price": 388.09
+  },
+  {
+    "id": "6fa976a4-f1a8-4dff-9b3f-0fdba1717fee",
+    "symbol": "HDIK",
+    "price": 100.76
+  },
+  {
+    "id": "3ad904a0-8f48-43ec-857d-9510e3557076",
+    "symbol": "SHOP",
+    "price": 65.75
+  },
+  {
+    "id": "6383e21c-1f74-4120-9f08-b86f782cad27",
+    "symbol": "KOPYQF",
+    "price": 67.8
+  },
+  {
+    "id": "925f2390-7bfa-49be-8ab7-f9050e9ab5a8",
+    "symbol": "FVFD",
+    "price": 64.75
+  },
+  {
+    "id": "ffc7c5bd-8c96-4136-9127-c6d01c636fd6",
+    "symbol": "GKJC",
+    "price": 353.31
+  },
+  {
+    "id": "69736a67-e0bf-44df-8fc2-d82450bc4cbc",
+    "symbol": "CPK",
+    "price": 118.98
+  },
+  {
+    "id": "14ce0793-a43e-41e6-a963-b618c99759fe",
+    "symbol": "RXSX",
+    "price": 183.38
+  },
+  {
+    "id": "73a3329d-afca-4326-b216-a56acf374863",
+    "symbol": "IFI",
+    "price": 290.9
+  },
+  {
+    "id": "a9ef648b-1abd-47fb-b55a-90a464f04a39",
+    "symbol": "XGD",
+    "price": 154.09
+  },
+  {
+    "id": "d4504508-5f43-45d1-9bdd-3d945b138a20",
+    "symbol": "KOPYH",
+    "price": 58.36
+  },
+  {
+    "id": "363fcd65-e45d-49ce-a335-1bf016c20c53",
+    "symbol": "DZWW",
+    "price": 327.58
+  },
+  {
+    "id": "d797f65b-ab18-45e4-9062-31c8448bac15",
+    "symbol": "TYDJ",
+    "price": 323.05
+  },
+  {
+    "id": "9d92f925-e656-4465-9afb-ae2d9dd0554c",
+    "symbol": "KOPYQS",
+    "price": 67.41
+  },
+  {
+    "id": "91c670d6-a33d-4983-8d38-f01c96e2d395",
+    "symbol": "WMTU",
+    "price": 154.15
+  },
+  {
+    "id": "e014eb6e-8d7c-4d3e-9607-d7d034fc1e14",
+    "symbol": "AAPL",
+    "price": 174.99
+  },
+  {
+    "id": "0ae3d32f-4736-44dd-8536-5e715d57f6eb",
+    "symbol": "SDNL",
+    "price": 37.68
+  },
+  {
+    "id": "ac48d6a3-4674-48aa-a134-7ce3268c0c1d",
+    "symbol": "YKA",
+    "price": 461.55
+  },
+  {
+    "id": "70c9be48-4d1c-4697-b604-2500a7306f73",
+    "symbol": "LYFTIT",
+    "price": 13.47
+  },
+  {
+    "id": "9266287a-0745-4d05-a2c8-08b46e1a230b",
+    "symbol": "UITKO",
+    "price": 454.46
+  },
+  {
+    "id": "a1250222-925d-45f9-943a-ac24a9cbc4ae",
+    "symbol": "BABAJS",
+    "price": 88.79
+  },
+  {
+    "id": "f8a43832-5087-49e6-8361-3f05f58d627e",
+    "symbol": "KOPYQE",
+    "price": 62.62
+  },
+  {
+    "id": "ae07bb13-e6ac-4b0d-b3df-21aa4a65eead",
+    "symbol": "YUX",
+    "price": 353.6
+  },
+  {
+    "id": "2685e3d3-3a25-474c-8a30-91dfd7c8a674",
+    "symbol": "FAGUR",
+    "price": 48.87
+  },
+  {
+    "id": "4b968d2a-3753-4e51-909f-9d165bb91cf7",
+    "symbol": "BABAG",
+    "price": 86.11
+  },
+  {
+    "id": "90431b34-f235-4f7f-a898-3488ccf56b6c",
+    "symbol": "WMTSBH",
+    "price": 155.12
+  },
+  {
+    "id": "40f9c97e-2c10-44ce-80ee-5f4299cfbb00",
+    "symbol": "NDFOZ",
+    "price": 384.04
+  },
+  {
+    "id": "53349fc1-e28c-421f-b469-df8f9a12076b",
+    "symbol": "YHCV",
+    "price": 42.82
+  },
+  {
+    "id": "da6d7692-3ff8-414e-90a0-23fc24bc6a41",
+    "symbol": "KO",
+    "price": 61.45
+  },
+  {
+    "id": "11f89471-03a4-4d09-a820-18dd3ab5774c",
+    "symbol": "PEPWK",
+    "price": 204.98
+  },
+  {
+    "id": "9f783887-e280-4991-8eb8-5743644e54f6",
+    "symbol": "VL",
+    "price": 223.73
+  },
+  {
+    "id": "f85cb4c3-ed31-4191-98b2-58353994ff22",
+    "symbol": "MAC",
+    "price": 417.63
+  },
+  {
+    "id": "dc537f25-b7b3-49a1-9076-773c8ac80fdd",
+    "symbol": "OAUVC",
+    "price": 300.3
+  },
+  {
+    "id": "6ff9df34-9748-452f-ad5b-14cf7394aa0b",
+    "symbol": "BA",
+    "price": 187.13
+  },
+  {
+    "id": "7fd8911b-95d4-456c-872f-4b9053aed101",
+    "symbol": "MIG",
+    "price": 107.54
+  },
+  {
+    "id": "6359f7b0-94da-48de-a361-a7aae2004010",
+    "symbol": "DISI",
+    "price": 102.97
+  },
+  {
+    "id": "9a2f7caa-4c82-417e-8d31-a7bd0cdb79e9",
+    "symbol": "VDHET",
+    "price": 103.5
+  },
+  {
+    "id": "d5675ab9-b719-4b15-b52a-fe9b8a984be2",
+    "symbol": "BABAJN",
+    "price": 86.82
+  },
+  {
+    "id": "12650083-e1a2-40ef-9316-7beddc41b4ec",
+    "symbol": "BABAJ",
+    "price": 89.44
+  },
+  {
+    "id": "25a53eb7-b400-4a36-838d-136c8cee89c8",
+    "symbol": "FOQF",
+    "price": 426.93
+  },
+  {
+    "id": "f1184832-44d8-4550-b17f-78bf2ba8887e",
+    "symbol": "MSFT",
+    "price": 312.54
+  },
+  {
+    "id": "332b70ff-ff3c-4ed0-991e-a5d6e68942bf",
+    "symbol": "FQSE",
+    "price": 225.4
+  },
+  {
+    "id": "3677f662-6d33-44e5-8cde-b95c5d271fc6",
+    "symbol": "YXE",
+    "price": 232.84
+  },
+  {
+    "id": "80f3c185-7658-40e7-a93c-955bbe0690bd",
+    "symbol": "GE",
+    "price": 117.8
+  },
+  {
+    "id": "a3e54181-40bb-4fac-a6d7-d94cb813166b",
+    "symbol": "WDG",
+    "price": 480.63
+  },
+  {
+    "id": "54f9c870-9387-461e-8c32-17799728ba34",
+    "symbol": "DISR",
+    "price": 97.8
+  },
+  {
+    "id": "fb9f0e04-cacb-44f6-ab53-8258b10d8f1c",
+    "symbol": "OTFWG",
+    "price": 390.95
+  },
+  {
+    "id": "265aaf52-e871-45c4-bc02-fd75c3902318",
+    "symbol": "EHN",
+    "price": 88.84
+  },
+  {
+    "id": "d2784c31-63bd-427a-a454-bc671f874ce0",
+    "symbol": "KOPV",
+    "price": 65.52
+  },
+  {
+    "id": "2315414d-d037-4fcc-934f-43565c121ba6",
+    "symbol": "XXSHO",
+    "price": 204.62
+  },
+  {
+    "id": "8ff4e2eb-6b71-40ab-b7b0-eb4cfe993c2c",
+    "symbol": "COST",
+    "price": 535.67
+  },
+  {
+    "id": "6ab92e32-99a3-4532-9c6e-43ceca48035a",
+    "symbol": "AHR",
+    "price": 343.28
+  },
+  {
+    "id": "66cef669-315e-4a7d-bb2f-b03fc5c71fdc",
+    "symbol": "NFLXWD",
+    "price": 369.21
+  },
+  {
+    "id": "4722e421-1808-4268-a619-538a46c59b1f",
+    "symbol": "DIS",
+    "price": 97.1
+  },
+  {
+    "id": "973c04b9-703c-4fcf-ad98-999302c3c9e9",
+    "symbol": "QXKX",
+    "price": 125.53
+  },
+  {
+    "id": "d47d2591-cdd7-49b4-b8dc-951f252ee983",
+    "symbol": "JTP",
+    "price": 300.5
+  },
+  {
+    "id": "be012158-8c33-4f26-a222-4bcfb4f1cb5a",
+    "symbol": "COSTTH",
+    "price": 556.07
+  },
+  {
+    "id": "ef9a6db8-c3c4-448c-a786-b36073036043",
+    "symbol": "WDBR",
+    "price": 307.29
+  },
+  {
+    "id": "13bf4eab-f5fc-403a-b37d-fef58901e27e",
+    "symbol": "ORCL",
+    "price": 120.44
+  },
+  {
+    "id": "e99a6a1a-fedb-4c92-8e34-25e88e887033",
+    "symbol": "EBO",
+    "price": 466.96
+  },
+  {
+    "id": "be9922ea-a20c-4b18-8cd6-a21a7f3b9983",
+    "symbol": "SCYU",
+    "price": 21.66
+  },
+  {
+    "id": "b10c493e-b81c-43ba-8474-b5e8b3ce933d",
+    "symbol": "WENPU",
+    "price": 299.06
+  },
+  {
+    "id": "ccb15aad-b237-4a6a-8a5a-552ff996f508",
+    "symbol": "BAZ",
+    "price": 184.51
+  },
+  {
+    "id": "b31b148a-70c1-4e1b-b0f9-84c9446a2e6b",
+    "symbol": "VJH",
+    "price": 223.58
+  },
+  {
+    "id": "fdc08b4c-86ce-4061-a4c1-b1edf86c8e99",
+    "symbol": "FJXI",
+    "price": 157.38
+  },
+  {
+    "id": "04f04c32-3fae-42a8-915d-eef43b3a98b0",
+    "symbol": "CFRPV",
+    "price": 380.55
+  },
+  {
+    "id": "bc393dc4-7c8c-4e54-9f81-5fdfe93788f3",
+    "symbol": "VZFV",
+    "price": 81.43
+  },
+  {
+    "id": "158ad238-8c67-4a13-88a4-17e3b15bcd72",
+    "symbol": "PIPQE",
+    "price": 217.2
+  },
+  {
+    "id": "c52b23c4-f4c9-4b51-b48f-edde6c240385",
+    "symbol": "WMTS",
+    "price": 151.74
+  },
+  {
+    "id": "f7e174c6-c0dc-4276-9d85-829981ce51ef",
+    "symbol": "GPDS",
+    "price": 404.18
+  },
+  {
+    "id": "04815c5c-3794-4820-ac70-068757ff5438",
+    "symbol": "NFLX",
+    "price": 360.1
+  },
+  {
+    "id": "cb23b917-be9c-446e-94b8-65d180eda8e5",
+    "symbol": "LYFT",
+    "price": 13.8
+  },
+  {
+    "id": "9c528396-148a-45a4-877e-69778cb79696",
+    "symbol": "GTF",
+    "price": 270.52
+  },
+  {
+    "id": "a6f98456-2e4d-4e88-aac2-18310c456707",
+    "symbol": "PEPU",
+    "price": 180.26
+  },
+  {
+    "id": "2c9c769f-e654-4a48-8346-a96f68eb8f25",
+    "symbol": "DOJWS",
+    "price": 374.35
+  },
+  {
+    "id": "7977eb34-780c-4c52-a80e-37922b3add55",
+    "symbol": "CPJDA",
+    "price": 58.9
+  },
+  {
+    "id": "9c29d592-91e4-4bf1-b438-54c545bd8306",
+    "symbol": "AMDV",
+    "price": 119.35
+  },
+  {
+    "id": "677a5988-de56-4c62-9081-b62073ef7e31",
+    "symbol": "TU",
+    "price": 17.09
+  },
+  {
+    "id": "027eb322-5b65-4ad7-92f8-ff3bf6a01e73",
+    "symbol": "DQO",
+    "price": 473.01
+  },
+  {
+    "id": "4a50ec28-5698-475e-9e4d-d8a8400efc7c",
+    "symbol": "LYFTG",
+    "price": 13.79
+  },
+  {
+    "id": "a2aff149-2f1f-4f6f-b937-23e7bebf7ad1",
+    "symbol": "NKEC",
+    "price": 104.28
+  },
+  {
+    "id": "93db7df6-f8ef-4393-9baa-5486e883b363",
+    "symbol": "WMTSB",
+    "price": 154.71
+  },
+  {
+    "id": "f24d367d-d9de-4e56-be14-51c03fa96c97",
+    "symbol": "OAM",
+    "price": 384.16
+  },
+  {
+    "id": "03d0de07-a060-4749-9d11-e3f8a06e0005",
+    "symbol": "VJHI",
+    "price": 243.02
+  },
+  {
+    "id": "c770fc31-09aa-4961-a8a7-ef3883ddfe72",
+    "symbol": "DWM",
+    "price": 360.32
+  },
+  {
+    "id": "4b3f509a-6f60-4281-b185-8aa368f2151d",
+    "symbol": "IQC",
+    "price": 497.59
+  },
+  {
+    "id": "b2623fd6-cdaf-4ea6-9fca-f61dca8faeb3",
+    "symbol": "BABA",
+    "price": 84.23
+  },
+  {
+    "id": "4f3c7b46-53fd-444e-a3bd-99d24272b32b",
+    "symbol": "LVYQR",
+    "price": 31.7
+  },
+  {
+    "id": "236769a1-820c-4568-8ded-ab7339f26052",
+    "symbol": "QWG",
+    "price": 99.25
+  },
+  {
+    "id": "468ac38f-6292-477c-934f-1e149c908125",
+    "symbol": "UBER",
+    "price": 54.17
+  },
+  {
+    "id": "dcc62322-5831-4524-a691-4aff20cdec7c",
+    "symbol": "NVDA",
+    "price": 402.18
+  },
+  {
+    "id": "4856b629-8733-4fc8-80d8-445575216d97",
+    "symbol": "XAUXW",
+    "price": 41.92
+  },
+  {
+    "id": "a2bd222b-445b-49fc-8cd1-7f437dd56b60",
+    "symbol": "COSTTH",
+    "price": 554.11
+  },
+  {
+    "id": "18942e7c-9906-42d3-8b8f-36a884af6ff0",
+    "symbol": "RVY",
+    "price": 91.04
+  },
+  {
+    "id": "58f566e8-0674-4020-8749-af44cc60f6d7",
+    "symbol": "WMTSE",
+    "price": 162.27
+  },
+  {
+    "id": "c6436ff9-a346-420f-bba8-426dbac4fcdb",
+    "symbol": "JWWYS",
+    "price": 149.27
+  },
+  {
+    "id": "78006ab8-0d2a-4abb-8873-bc04d81e4803",
+    "symbol": "YKSDR",
+    "price": 129.25
+  },
+  {
+    "id": "c293b385-63f6-4291-a2e5-611d0afced0c",
+    "symbol": "META",
+    "price": 275.33
+  },
+  {
+    "id": "e6470101-70ff-42e2-b9b4-6bc2127d45e5",
+    "symbol": "TISZ",
+    "price": 384.13
+  },
+  {
+    "id": "b8f3fff4-c310-4fa4-b263-d67647bbd097",
+    "symbol": "ATP",
+    "price": 120.9
+  },
+  {
+    "id": "d932e28e-5c8b-4540-9403-a39a6a73f7a9",
+    "symbol": "BABAJM",
+    "price": 97.03
+  },
+  {
+    "id": "12c23f73-a121-4378-aad1-9df144d3e956",
+    "symbol": "ZHH",
+    "price": 166.05
+  },
+  {
+    "id": "4b005def-c7d1-4f0c-b651-470f535b362b",
+    "symbol": "KOPY",
+    "price": 59.76
+  },
+  {
+    "id": "c9f216f7-6ca6-435e-8206-f18d195b8436",
+    "symbol": "KOP",
+    "price": 60.61
+  },
+  {
+    "id": "e6f36169-d4c6-4586-90aa-4fae07109bc8",
+    "symbol": "AMZNW",
+    "price": 135.04
+  },
+  {
+    "id": "7fec3d6f-db3d-4230-98d2-7afaf14c1c53",
+    "symbol": "LYFTIY",
+    "price": 14.48
+  },
+  {
+    "id": "43a9d382-d474-4bd5-928c-7c55d03bc320",
+    "symbol": "EATA",
+    "price": 168.81
+  },
+  {
+    "id": "1f05059d-d278-4684-9455-2fd499f27b66",
+    "symbol": "MYNND",
+    "price": 22.15
+  },
+  {
+    "id": "9e2930fd-a8c4-4e38-b8db-e090c980bf72",
+    "symbol": "DISIZG",
+    "price": 107.95
+  },
+  {
+    "id": "dbe6ca0b-306a-4e38-8485-3c50cf547c87",
+    "symbol": "YBHR",
+    "price": 365.33
+  },
+  {
+    "id": "914b6c38-cd50-4af1-8874-1da1e1060965",
+    "symbol": "UQR",
+    "price": 175.98
+  },
+  {
+    "id": "bbb4293e-2db1-4c5b-b236-f479537e77a2",
+    "symbol": "ZIU",
+    "price": 78.98
+  },
+  {
+    "id": "c0c49f42-1020-4838-8962-1d19b4e0b271",
+    "symbol": "PEP",
+    "price": 182.9
+  },
+  {
+    "id": "f03e9cb2-6901-4187-851d-d252ca2deca4",
+    "symbol": "MSFTH",
+    "price": 306.08
+  },
+  {
+    "id": "3c70ee00-d44b-4410-963e-f186c8ed4f77",
+    "symbol": "PJN",
+    "price": 11.13
+  },
+  {
+    "id": "d9a4b567-aa68-438b-93c9-69b6d6f31b2d",
+    "symbol": "AMZN",
+    "price": 128.15
+  },
+  {
+    "id": "56514f1a-0dc7-4d02-8542-43426b9c6434",
+    "symbol": "AMDT",
+    "price": 118.6
+  },
+  {
+    "id": "3832b4c7-5838-464a-8910-079d613fe6dd",
+    "symbol": "VJU",
+    "price": 284.57
+  },
+  {
+    "id": "a6015bd3-5bda-447d-93a4-b1eb07c70f11",
+    "symbol": "ZNGTF",
+    "price": 69.22
+  },
+  {
+    "id": "43f61bfb-ee3a-42ac-99b1-6a95f3d870d9",
+    "symbol": "AMDVR",
+    "price": 127.18
+  },
+  {
+    "id": "746d350d-a488-4080-be5b-93bca46ca7e2",
+    "symbol": "NKE",
+    "price": 98.74
+  },
+  {
+    "id": "a1568dbf-c760-4f5c-a9ba-c8d9c8ad31d9",
+    "symbol": "COSTT",
+    "price": 535.06
+  },
+  {
+    "id": "94c8c953-3e91-4622-9c44-91bb1d80c0c5",
+    "symbol": "INTC",
+    "price": 32.22
+  },
+  {
+    "id": "b5307d81-5b30-44e9-b0b5-e45a8f331850",
+    "symbol": "SQ",
+    "price": 67.12
+  },
+  {
+    "id": "d674853f-cd2e-4d6d-b4f0-404590d0afd7",
+    "symbol": "OXZB",
+    "price": 397.84
+  },
+  {
+    "id": "65289b60-c13d-4a95-94c3-1c1120dfd1b1",
+    "symbol": "VZD",
+    "price": 39.43
+  },
+  {
+    "id": "4203b826-7d57-4cc4-ae13-f3d8948fea69",
+    "symbol": "QBXCJ",
+    "price": 191.59
+  },
+  {
+    "id": "2821f5e4-8b00-4dad-a924-cef1025299d2",
+    "symbol": "GEK",
+    "price": 112.58
+  },
+  {
+    "id": "63491539-4086-48b4-9831-9d40ed7f35b2",
+    "symbol": "DISIZ",
+    "price": 100.97
+  },
+  {
+    "id": "480f7358-3603-41ca-9c2a-6f5ff066584d",
+    "symbol": "T",
+    "price": 17.22
+  },
+  {
+    "id": "4689d2cc-043b-4987-bf52-09e889ed40c2",
+    "symbol": "PWJ",
+    "price": 15.29
+  },
+  {
+    "id": "4330a46d-30a9-43d5-b746-0f6c3d464181",
+    "symbol": "JHLD",
+    "price": 35.67
+  },
+  {
+    "id": "2166365f-ca9a-44d9-abc3-144b2932a76c",
+    "symbol": "XQC",
+    "price": 181.38
+  },
+  {
+    "id": "dded480d-415f-4685-b84a-f7d45d8759af",
+    "symbol": "YDEYA",
+    "price": 99.12
+  },
+  {
+    "id": "8b92854e-0d77-4ede-8aea-170e0b6e4fb8",
+    "symbol": "PCEA",
+    "price": 296.35
+  },
+  {
+    "id": "826fefd5-187f-4d4e-9e8d-aea2376aabfe",
+    "symbol": "OZF",
+    "price": 405.65
+  },
+  {
+    "id": "9c9888b2-1f96-4ef2-9ca0-d833a357a5dc",
+    "symbol": "PEPW",
+    "price": 200.83
+  },
+  {
+    "id": "9cb6b7af-2e10-4c9e-ac6a-e4281b11de77",
+    "symbol": "ZBP",
+    "price": 390.68
+  },
+  {
+    "id": "69054e0c-3093-4607-af74-3cdc97556d15",
+    "symbol": "IPQ",
+    "price": 162.66
+  },
+  {
+    "id": "681acfd4-6a9b-4534-8c9b-2c0fffe5bfc7",
+    "symbol": "COSTTHS",
+    "price": 526.98
+  },
+  {
+    "id": "5e9ee30a-0b9c-4683-812d-f21414b3b80c",
+    "symbol": "NKECI",
+    "price": 99.75
+  },
+  {
+    "id": "381e4581-5935-41a8-b623-1452e7f179c1",
+    "symbol": "MUGQA",
+    "price": 127.75
+  },
+  {
+    "id": "722e5971-688f-4528-a759-e39072efc74e",
+    "symbol": "QHFI",
+    "price": 398.28
+  },
+  {
+    "id": "efdbff18-16b9-4993-bf52-1e061c89ebfc",
+    "symbol": "JHBE",
+    "price": 288.95
+  },
+  {
+    "id": "b9d54807-cc48-4ce9-88b1-7298cb69abf6",
+    "symbol": "DOMU",
+    "price": 436.6
+  },
+  {
+    "id": "2443c04a-1abb-4a1d-826b-ef6037168b8a",
+    "symbol": "TSLA",
+    "price": 182.45
+  },
+  {
+    "id": "96787df5-80a7-4794-95ea-87912d431c39",
+    "symbol": "KOPYQSP",
+    "price": 65.79
+  },
+  {
+    "id": "42cb5958-8215-49ce-b1a9-40471a4d6396",
+    "symbol": "CRM",
+    "price": 222.39
+  },
+  {
+    "id": "860e647d-8277-4d02-982d-8b1fe5948abf",
+    "symbol": "VJHIX",
+    "price": 237.22
+  },
+  {
+    "id": "f7054793-75ab-48f2-9b9a-65caa55953f4",
+    "symbol": "HJPRS",
+    "price": 350.73
+  }
+]

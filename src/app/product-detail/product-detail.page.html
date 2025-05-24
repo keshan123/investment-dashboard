@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/market"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Product Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ng-container *ngIf="!loading && product">
+    <ion-list>
+      <ion-item>
+        <ion-label><strong>Name:</strong> {{ product.name }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Symbol:</strong> {{ product.symbol }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Category:</strong> {{ product.category }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Description:</strong> {{ product.description }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Price:</strong> {{ price | number:'1.2-2' }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <!-- Quantity Input -->
+    <ion-item>
+      <ion-label style="margin-bottom: 12px;" position="floating">Quantity</ion-label>
+      <ion-input
+        type="number"
+        min="1"
+        [ngModel]="quantity"
+        (ngModelChange)="onQuantityChange($event)"
+        inputmode="numeric"
+        placeholder="1"
+      ></ion-input>
+    </ion-item>
+
+    <!-- Buy Button -->
+    <ion-button expand="block" (click)="buy()">
+      Buy
+    </ion-button>
+  </ng-container>
+
+  <ng-container *ngIf="loading">
+    <ion-item>
+      <ion-label>Loading...</ion-label>
+    </ion-item>
+  </ng-container>
+</ion-content>

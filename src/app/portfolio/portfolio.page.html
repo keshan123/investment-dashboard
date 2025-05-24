@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Portfolio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Portfolio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list *ngIf="investmentsWithPercent$ | async as investments">
+    <ion-item *ngFor="let inv of investments">
+      <ion-label>
+        <h2>{{ inv.symbol }}</h2>
+        <p>Amount: {{ inv.quantity }}</p>
+        <p>Percent: {{ inv.percent | number:'1.1-2' }}%</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
