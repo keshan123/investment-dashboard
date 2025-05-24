@@ -165,4 +165,8 @@ export class PortfolioPage implements OnInit {
   getTotalValue(investments: any[]): number {
     return investments.reduce((sum, inv) => sum + inv.totalValue, 0);
   }
+
+  trackBySymbol(index: number, inv: any) {
+    return inv.symbol;
+  }
 }
