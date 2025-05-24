@@ -1,9 +1,10 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { RouterModule } from '@angular/router';
+import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 
 export interface Product {
   id: string;
@@ -60,10 +61,37 @@ export class MarketService {
     RouterModule,
   ],
 })
-export class MarketPage {
+export class MarketPage implements OnInit {
   products$: Observable<Product[]>;
+  livePrices: { [symbol: string]: PriceTick } = {};
 
-  constructor(private marketService: MarketService) {
+  constructor(
+    private marketService: MarketService,
+    private priceFluctuation: PriceFluctuationService
+  ) {
     this.products$ = this.marketService.products$;
+  }
+
+  async ngOnInit() {
+    // Initialize price service with pricing.json
+    const resp = await fetch('assets/pricing.json');
+    const pricing = await resp.json();
+    this.priceFluctuation.initPrices(pricing);
+    // Subscribe to all price ticks for template use
+    this.priceFluctuation.getAllPrices$().subscribe(prices => {
+      this.livePrices = prices;
+    });
+  }
+
+  getPriceTick(symbol: string): PriceTick | undefined {
+    return this.livePrices[symbol];
+  }
+
+  getPriceColor(symbol: string): string {
+    const tick = this.getPriceTick(symbol);
+    if (!tick) return '';
+    if (tick.price > tick.prevPrice) return 'green';
+    if (tick.price < tick.prevPrice) return 'red';
+    return '';
   }
 }

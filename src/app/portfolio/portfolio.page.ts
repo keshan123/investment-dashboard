@@ -1,9 +1,10 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 
 export interface Investment {
   id: string;
@@ -71,18 +72,67 @@ export class PortfolioService {
     IonLabel
   ],
 })
-export class PortfolioPage {
-  investmentsWithPercent$: Observable<(Investment & { percent: number })[]>;
+export class PortfolioPage implements OnInit {
+  investmentsWithPercent$: Observable<(
+    Investment & {
+      percent: number;
+      totalValue: number;
+      initialValue: number;
+      percentDiff: number;
+    }
+  )[]>;
+  livePrices: { [symbol: string]: PriceTick } = {};
+  private livePricesSubject = new BehaviorSubject<{ [symbol: string]: PriceTick }>({});
 
-  constructor(private portfolioService: PortfolioService) {
-    this.investmentsWithPercent$ = this.portfolioService.investments$.pipe(
-      map(investments => {
+  constructor(
+    private portfolioService: PortfolioService,
+    private priceFluctuation: PriceFluctuationService
+  ) {
+    this.investmentsWithPercent$ = combineLatest([
+      this.portfolioService.investments$,
+      this.livePricesSubject.asObservable()
+    ]).pipe(
+      map(([investments, livePrices]) => {
         const total = investments.reduce((sum, inv) => sum + inv.quantity, 0);
-        return investments.map(inv => ({
-          ...inv,
-          percent: total ? (inv.quantity / total) * 100 : 0
-        }));
+        return investments.map(inv => {
+          const livePrice = livePrices[inv.symbol]?.price ?? inv.avgBuyPrice;
+          const totalValue = inv.quantity * livePrice;
+          const initialValue = inv.quantity * inv.avgBuyPrice;
+          const percentDiff = initialValue === 0 ? 0 : ((totalValue - initialValue) / initialValue) * 100;
+          return {
+            ...inv,
+            percent: total ? (inv.quantity / total) * 100 : 0,
+            totalValue,
+            initialValue,
+            percentDiff
+          };
+        });
       })
     );
+  }
+
+  async ngOnInit() {
+    // Ensure price service is initialized
+    if (!(this.priceFluctuation as any).initialized) {
+      const resp = await fetch('assets/pricing.json');
+      const pricing = await resp.json();
+      this.priceFluctuation.initPrices(pricing);
+    }
+    this.priceFluctuation.getAllPrices$().subscribe(prices => {
+      this.livePrices = prices;
+      this.livePricesSubject.next(prices);
+    });
+  }
+
+  getPriceTick(symbol: string): PriceTick | undefined {
+    return this.livePrices[symbol];
+  }
+
+  getPriceColor(symbol: string): string {
+    const tick = this.getPriceTick(symbol);
+    if (!tick) return '';
+    if (tick.price > tick.prevPrice) return 'green';
+    if (tick.price < tick.prevPrice) return 'red';
+    return '';
   }
 }

@@ -18,7 +18,12 @@
       <ion-label>
         <h2>{{ product.name }}</h2>
         <p>Symbol: {{ product.symbol }}</p>
-        <p>Price: {{ product.price | number:'1.2-2' }}</p>
+        <p>
+          Price:
+          <span [style.color]="getPriceColor(product.symbol)">
+            {{ getPriceTick(product.symbol)?.price | number:'1.2-2' }}
+          </span>
+        </p>
       </ion-label>
     </ion-item>
   </ion-list>

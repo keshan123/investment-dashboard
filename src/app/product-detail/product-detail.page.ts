@@ -1,10 +1,11 @@
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PortfolioService } from '../portfolio/portfolio.page';
 import { ToastController } from '@ionic/angular/standalone';
+import { PriceFluctuationService, PriceTick } from '../price-fluctuation.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -17,17 +18,28 @@ import { ToastController } from '@ionic/angular/standalone';
     FormsModule,
   ],
 })
-export class ProductDetailPage {
+export class ProductDetailPage implements OnInit {
   symbol = inject(ActivatedRoute).snapshot.paramMap.get('symbol');
   product: any = null;
   price: number | null = null;
   loading = true;
   quantity = 1;
+  priceTick: PriceTick | null = null;
   private router = inject(Router);
   private toastController = inject(ToastController);
+  private priceFluctuation = inject(PriceFluctuationService);
 
   constructor(private portfolioService: PortfolioService) {
     this.loadProduct();
+  }
+
+  async ngOnInit() {
+    if (this.symbol) {
+      this.priceFluctuation.getPrice$(this.symbol)?.subscribe(tick => {
+        this.priceTick = tick;
+        this.price = tick.price;
+      });
+    }
   }
 
   async loadProduct() {
@@ -52,6 +64,17 @@ export class ProductDetailPage {
     const num = Number(val);
     this.quantity = isNaN(num) || num < 1 ? 1 : Math.floor(num);
     console.log('onQuantityChange:', val, 'parsed:', this.quantity);
+  }
+
+  getPriceColor(): string {
+    if (!this.priceTick) return '';
+    if (this.priceTick.price > this.priceTick.prevPrice) return 'green';
+    if (this.priceTick.price < this.priceTick.prevPrice) return 'red';
+    return '';
+  }
+
+  get priceHistory(): number[] {
+    return this.priceTick?.history || [];
   }
 
   async buy() {

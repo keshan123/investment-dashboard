@@ -16,9 +16,28 @@
   <ion-list *ngIf="investmentsWithPercent$ | async as investments">
     <ion-item *ngFor="let inv of investments">
       <ion-label>
-        <h2>{{ inv.symbol }}</h2>
+        <h2>{{ inv.name }}</h2>
+        <p>Symbol: {{ inv.symbol }}</p>
         <p>Amount: {{ inv.quantity }}</p>
-        <p>Percent: {{ inv.percent | number:'1.1-2' }}%</p>
+        <p>Percent: {{ inv.percent | number:'1.1-1' }}%</p>
+        <p>
+          Price:
+          <span [style.color]="getPriceColor(inv.symbol)">
+            {{ getPriceTick(inv.symbol)?.price | number:'1.2-2' }}
+          </span>
+        </p>
+        <p>
+          <strong>Total Value:</strong> {{ inv.totalValue | number:'1.2-2' }}
+        </p>
+        <p>
+          <strong>Initial Value:</strong> {{ inv.initialValue | number:'1.2-2' }}
+        </p>
+        <p>
+          <strong>Change:</strong>
+          <span [style.color]="inv.percentDiff > 0 ? 'green' : (inv.percentDiff < 0 ? 'red' : '')">
+            {{ inv.percentDiff | number:'1.1-2' }}%
+          </span>
+        </p>
       </ion-label>
     </ion-item>
   </ion-list>
