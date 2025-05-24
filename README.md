@@ -6,6 +6,7 @@
 - Displays user investments from `portfolio.json`.
 - Shows symbol, amount, percentage of portfolio, live-updating prices, total value, initial value, and percentage change since purchase.
 - Uses a donut chart to visualize portfolio allocation, with the total value in the center, updating live.
+- The "Portfolio" title is now displayed above the chart for better mobile layout.
 - Each investment row is styled with asset info, price info, investment info, and a colored bar matching the donut chart.
 - List uses `trackBy` and `<div>`s to prevent scroll jumps on price updates.
 - Back button on Product Detail uses browser history.
@@ -17,7 +18,7 @@
 - Live price updates, colored green/red for up/down ticks.
 - Search bar allows filtering by name or symbol, implemented with a reactive `BehaviorSubject`.
 - Clicking a product navigates to the Product Detail page.
-- Asset list items fade in with Angular Animations, including when searching.
+- (Note: List item fade-in animations were removed to ensure best touch support on iOS.)
 
 ### Product Detail Page
 - Shows product details, live price, and a form to buy or sell shares.
@@ -42,6 +43,14 @@
 - Modern, mobile-friendly styling, with careful attention to spacing, padding, and color.
 - State management with RxJS and BehaviorSubjects.
 - Audio and UI effects are scoped to only run when appropriate.
+
+---
+
+## Platform Notes & Known Issues
+- **iOS Touch Events:**
+  - Custom Angular animations on dynamic lists (such as fade-in or staggered animations) can interfere with touch/click events on iOS devices, especially when using Ionic components. Animations were removed from the market list to ensure best touch support.
+- **ng-reflect attributes:**
+  - Attributes like `ng-reflect-name` are only present in development mode for debugging and will not appear in production builds.
 
 ---
 

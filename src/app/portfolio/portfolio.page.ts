@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon, IonButton } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonIcon, IonButton, IonButtons } from '@ionic/angular/standalone';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -146,7 +146,8 @@ export class PortfolioService {
     IonItem,
     IonLabel,
     IonIcon,
-    IonButton
+    IonButton,
+    IonButtons
   ],
   providers: [ModalController],
 })
