@@ -1,0 +1,53 @@
+.deposit-content {
+  --background: #232323;
+}
+
+.deposit-container {
+  max-width: 420px;
+  margin: 32px auto;
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.deposit-wallet-label {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.deposit-wallet-value {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.wallet-negative {
+  color: #DC1433;
+}
+.wallet-positive {
+  color: #19B074;
+}
+
+.deposit-item {
+  --background: #222;
+  --border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.deposit-btn {
+  --background: #19B074;
+  font-weight: 600;
+  font-size: 1.1em;
+  width: 100%;
+  margin-top: 12px;
+} 

@@ -10,7 +10,8 @@ import { KonamiMarioService } from '../../konami-mario.service';
   selector: 'app-deposit',
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule],
-  templateUrl: './deposit.page.html'
+  templateUrl: './deposit.page.html',
+  styleUrls: ['./deposit.page.scss']
 })
 export class DepositPage {
   cashBalance = 0;

@@ -1,1 +1,146 @@
+.portfolio-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 32px;
+}
 
+.portfolio-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wallet-display {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #19B074;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.wallet-label {
+  color: #fff;
+  font-size: 0.98em;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.wallet-negative {
+  color: #DC1433;
+}
+.wallet-positive {
+  color: #19B074;
+}
+
+.deposit-btn {
+  padding-right: 20px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  margin: 24px 0 0 0;
+  z-index: 100;
+}
+
+.portfolio-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.portfolio-list-header {
+  margin: 0 20px 8px 20px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-list-header > div {
+  flex: 1;
+  text-align: right;
+}
+.portfolio-list-header > div:first-child {
+  text-align: left;
+}
+
+.investment-row {
+  padding: 12px 12px 0 12px;
+  position: relative;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.investment-bar {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 4px;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.investment-row-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.investment-asset {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.investment-name {
+  font-weight: bold;
+}
+.investment-symbol {
+  color: #888;
+  margin-bottom: 12px;
+}
+.investment-quantity {
+  color: #fff;
+  font-weight: 500;
+}
+
+.investment-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.investment-percent-diff {
+  margin-bottom: 12px;
+}
+
+.investment-value {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+.investment-total {
+  font-weight: bold;
+}
+.investment-percent {
+  color: #888;
+  margin-bottom: 12px;
+}

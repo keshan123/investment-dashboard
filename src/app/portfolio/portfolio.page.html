@@ -1,17 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 32px;">
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <div style="font-size: 1.1em; font-weight: 600; color: #19B074; display: flex; align-items: center; gap: 6px; min-width: 0;">
-          <span style="color: #fff; font-size: 0.98em; font-weight: 500; margin-right: 4px;">Wallet:</span>
+    <div class="portfolio-toolbar">
+      <div class="portfolio-toolbar-actions">
+        <div class="wallet-display">
+          <span class="wallet-label">Wallet:</span>
           <ng-container *ngIf="cashBalance$ | async as cash">
-            <span [style.color]="cash < 0 ? '#DC1433' : '#19B074'">
+            <span [ngClass]="{'wallet-negative': cash < 0, 'wallet-positive': cash >= 0}">
               ${{ cash | number:'1.2-2' }}
             </span>
           </ng-container>
         </div>
         <ion-buttons>
-          <ion-button fill="solid" size="small" color="primary" (click)="goToDeposit()" style="padding-right: 20px;">
+          <ion-button class="deposit-btn" fill="solid" size="small" color="primary" (click)="goToDeposit()">
             Deposit
           </ion-button>
         </ion-buttons>
@@ -24,10 +24,10 @@
 
 <ion-content [fullscreen]="true">
 
-  <h1 style="text-align: center; font-size: 2em; font-weight: 700; color: #fff; margin: 24px 0 0 0; z-index: 100;">Portfolio</h1>
+  <h1 class="portfolio-title">Portfolio</h1>
 
   <!-- Donut Chart -->
-  <div style="display: flex; justify-content: center; align-items: center; margin: 24px 0;">
+  <div class="portfolio-chart-container">
     <svg width="140" height="140" viewBox="0 0 140 140">
       <g *ngIf="investmentsWithMetrics$ | async as investments">
         <ng-container *ngFor="let inv of investments; let i = index; let last = last">
@@ -52,36 +52,36 @@
   </div>
 
   <!-- List Header -->
-  <div style="margin: 0 20px 8px 20px; padding-left: 12px; display: flex; justify-content: space-between; align-items: center; color: #aaa; font-size: 0.95em; font-weight: 600; letter-spacing: 0.02em;">
-    <div style="flex: 1;">Asset</div>
-    <div style="flex: 1; text-align: right;">Price</div>
-    <div style="flex: 1; text-align: right;">Investment</div>
+  <div class="portfolio-list-header">
+    <div>Asset</div>
+    <div>Price</div>
+    <div>Investment</div>
   </div>
 
   <div *ngIf="investmentsWithMetrics$ | async as investments">
-    <div *ngFor="let inv of investments; let i = index; trackBy: trackBySymbol" style="padding: 12px 12px 0 12px; position: relative; margin-bottom: 8px; margin-left: 20px; margin-right: 20px;">
-      <div style="position: absolute; left: 0; top: 12px; width: 4px; height: 30px; border-radius: 2px;" [style.background]="donutColors[i % donutColors.length]"></div>
-      <div style="display: flex; width: 100%; justify-content: space-between; align-items: center; padding-left: 12px;">
+    <div *ngFor="let inv of investments; let i = index; trackBy: trackBySymbol" class="investment-row">
+      <div class="investment-bar" [style.background]="donutColors[i % donutColors.length]"></div>
+      <div class="investment-row-content">
         <!-- First column: Name and Symbol -->
-        <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
-          <span style="font-weight: bold;">{{ inv.name }}</span>
-          <span style="color: #888; margin-bottom: 12px;">{{ inv.symbol }} <span style="color: #fff; font-weight: 500;">({{ inv.quantity }})</span></span>
+        <div class="investment-asset">
+          <span class="investment-name">{{ inv.name }}</span>
+          <span class="investment-symbol">{{ inv.symbol }} <span class="investment-quantity">({{ inv.quantity }})</span></span>
         </div>
         <!-- Second column: Price and % Change -->
-        <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
+        <div class="investment-price">
           <span>
             <span [style.color]="getPriceChangeColor(inv.symbol)">
               {{ getPriceTick(inv.symbol)?.price | number:'1.2-2' }}
             </span>
           </span>
-          <span [style.color]="inv.percentDiff > 0 ? 'green' : (inv.percentDiff < 0 ? 'red' : '')" style="margin-bottom: 12px;">
+          <span [style.color]="inv.percentDiff > 0 ? 'green' : (inv.percentDiff < 0 ? 'red' : '')" class="investment-percent-diff">
             {{ inv.percentDiff | number:'1.1-2' }}%
           </span>
         </div>
         <!-- Third column: Total Value and % of Portfolio -->
-        <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
-          <span style="font-weight: bold;">{{ inv.totalValue | number:'1.2-2' }}</span>
-          <span style="color: #888; margin-bottom: 12px;">{{ inv.percent | number:'1.1-1' }}%</span>
+        <div class="investment-value">
+          <span class="investment-total">{{ inv.totalValue | number:'1.2-2' }}</span>
+          <span class="investment-percent">{{ inv.percent | number:'1.1-1' }}%</span>
         </div>
       </div>
     </div>
