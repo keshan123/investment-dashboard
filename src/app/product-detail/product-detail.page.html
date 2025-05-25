@@ -9,19 +9,17 @@
 
 <ion-content [fullscreen]="true">
   <!-- Top Info Row -->
-  <div *ngIf="!loading && product" style="max-width: 420px; margin: 24px auto 0 auto; padding: 0 20px;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+  <div *ngIf="!loading && product" class="product-detail-info-row">
+    <div class="product-detail-info-columns">
       <!-- Left Column -->
-      <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
-        <span style="font-size: 1.25em; font-weight: 700; color: #fff;">{{ product.name }}</span>
-        <span style="color: #888; font-size: 1em; font-weight: 500;">{{ product.symbol }}</span>
+      <div class="product-detail-info-left">
+        <span class="product-detail-name">{{ product.name }}</span>
+        <span class="product-detail-symbol">{{ product.symbol }}</span>
       </div>
       <!-- Right Column -->
-      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex: 1;">
-        <span style="font-size: 1.2em; font-weight: 600; color: #fff;">
-          {{ priceTick?.price | number:'1.2-2' }}
-        </span>
-        <span [style.color]="getPriceColor()" style="font-size: 1em; font-weight: 500;">
+      <div class="product-detail-info-right">
+        <span class="product-detail-price">{{ priceTick?.price | number:'1.2-2' }}</span>
+        <span [style.color]="getPriceColor()" class="product-detail-price-diff">
           <ng-container *ngIf="priceTick">
             {{ priceTick.price - (priceTick.history[0] || priceTick.price) | number:'1.2-2' }}
             (
@@ -36,7 +34,7 @@
   </div>
 
   <!-- Line Graph -->
-  <div *ngIf="priceTick" style="max-width: 420px; margin: 24px auto 0 auto; padding: 0 20px 16px 20px;">
+  <div *ngIf="priceTick" class="product-detail-graph-container">
     <svg width="100%" height="80" viewBox="0 0 140 80">
       <polyline
         *ngIf="priceTick.history.length > 1"
@@ -59,32 +57,32 @@
   </div>
 
   <!-- Buy/Sell Section -->
-  <div style="max-width: 420px; margin: 0 auto; padding: 0 20px 16px 20px;">
-    <form style="display: flex; flex-direction: column; gap: 16px;">
-      <ion-item style="--background: transparent; --border-radius: 12px;">
+  <div class="product-detail-buy-sell-container">
+    <form class="product-detail-buy-sell-form">
+      <ion-item class="product-detail-quantity-item">
         <ion-label position="floating">Quantity</ion-label>
         <ion-input type="number" [(ngModel)]="quantity" name="quantity" min="1" (ngModelChange)="onQuantityChange($event)" [max]="ownedQuantity > 0 ? ownedQuantity : null"></ion-input>
       </ion-item>
-      <div style="display: flex; gap: 12px; margin-top: 8px;">
-        <ion-button expand="block" type="button" (click)="buy()" [disabled]="!validQuantity" style="--background: #19B074; font-weight: 600; font-size: 1.1em; flex: 1; justify-content: center; align-items: center; display: flex;">
+      <div class="product-detail-buy-sell-buttons">
+        <ion-button expand="block" type="button" (click)="buy()" [disabled]="!validQuantity" class="product-detail-buy-btn">
           Buy
         </ion-button>
-        <ion-button *ngIf="ownedQuantity > 0" expand="block" type="button" (click)="sell()" [disabled]="quantity < 1 || quantity > ownedQuantity" style="--background: #DC1433; font-weight: 600; font-size: 1.1em; flex: 1; justify-content: center; align-items: center; display: flex;">
+        <ion-button *ngIf="ownedQuantity > 0" expand="block" type="button" (click)="sell()" [disabled]="quantity < 1 || quantity > ownedQuantity" class="product-detail-sell-btn">
           Sell
         </ion-button>
       </div>
-      <div style="margin-top: 1em; font-size: 1.1em; display: flex; justify-content: space-between;">
+      <div class="product-detail-totals-row">
         <span><strong>Total:</strong> {{ (priceTick?.price || price || 0) * validQuantity | number:'1.2-2' }}</span>
         <span *ngIf="ownedQuantity > 0"><strong>Proceeds:</strong> {{ (priceTick?.price || price || 0) * quantity | number:'1.2-2' }}</span>
       </div>
-      <div *ngIf="ownedQuantity > 0" style="color: #fff; font-size: 1em; margin-bottom: 2px;">You own {{ ownedQuantity }} shares</div>
+      <div *ngIf="ownedQuantity > 0" class="product-detail-owned-shares">You own {{ ownedQuantity }} shares</div>
     </form>
   </div>
 
   <!-- Key Statistics Section -->
-  <div style="max-width: 420px; margin: 0 auto 32px auto; padding: 0 20px;">
-    <h3 style="margin-top: 24px; margin-bottom: 12px; color: #fff; font-size: 1.15em; font-weight: 700; letter-spacing: 0.01em;">Key Statistics</h3>
-    <div *ngIf="product?.description" style="color: #bbb; font-size: 1em; line-height: 1.5;">
+  <div class="product-detail-stats-container">
+    <h3 class="product-detail-stats-title">Key Statistics</h3>
+    <div *ngIf="product?.description" class="product-detail-description">
       {{ product.description }}
     </div>
   </div>

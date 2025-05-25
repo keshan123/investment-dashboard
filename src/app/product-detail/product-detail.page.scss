@@ -1,1 +1,117 @@
- 
+.product-detail-info-row {
+  max-width: 420px;
+  margin: 24px auto 0 auto;
+  padding: 0 20px;
+}
+.product-detail-info-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.product-detail-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.product-detail-name {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #fff;
+}
+.product-detail-symbol {
+  color: #888;
+  font-size: 1em;
+  font-weight: 500;
+}
+.product-detail-info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex: 1;
+}
+.product-detail-price {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+}
+.product-detail-price-diff {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.product-detail-graph-container {
+  max-width: 420px;
+  margin: 24px auto 0 auto;
+  padding: 0 20px 16px 20px;
+}
+
+.product-detail-buy-sell-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 20px 16px 20px;
+}
+.product-detail-buy-sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product-detail-quantity-item {
+  --background: transparent;
+  --border-radius: 12px;
+}
+.product-detail-buy-sell-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.product-detail-buy-btn {
+  --background: #19B074;
+  font-weight: 600;
+  font-size: 1.1em;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.product-detail-sell-btn {
+  --background: #DC1433;
+  font-weight: 600;
+  font-size: 1.1em;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.product-detail-totals-row {
+  margin-top: 1em;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-owned-shares {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 2px;
+}
+
+.product-detail-stats-container {
+  max-width: 420px;
+  margin: 0 auto 32px auto;
+  padding: 0 20px;
+}
+.product-detail-stats-title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.product-detail-description {
+  color: #bbb;
+  font-size: 1em;
+  line-height: 1.5;
+} 
