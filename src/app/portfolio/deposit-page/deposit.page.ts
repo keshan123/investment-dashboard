@@ -14,7 +14,7 @@ import { KonamiMarioService } from '../../konami-mario.service';
 })
 export class DepositPage {
   cashBalance = 0;
-  depositAmount: number | null = null;
+  depositAmount: number | null = 50;
 
   constructor(
     private portfolioService: PortfolioService,

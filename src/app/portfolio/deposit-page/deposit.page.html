@@ -10,9 +10,9 @@
          [style.color]="cashBalance < 0 ? '#DC1433' : '#19B074'">
       ${{ cashBalance | number:'1.2-2' }}
     </div>
-    <ion-item style="--background: #222; --border-radius: 12px; width: 100%;">
+    <ion-item style="--background: #222; --border-radius: 12px; width: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 10px;">
       <ion-label position="floating">Deposit Amount</ion-label>
-      <ion-input type="number" [(ngModel)]="depositAmount" min="1" name="depositAmount"></ion-input>
+      <ion-input type="number" [(ngModel)]="depositAmount" min="1" name="depositAmount" placeholder="50"></ion-input>
     </ion-item>
     <ion-button expand="block" (click)="deposit()" [disabled]="!depositAmount || depositAmount <= 0" style="--background: #19B074; font-weight: 600; font-size: 1.1em; width: 100%; margin-top: 12px;">Deposit</ion-button>
   </div>
