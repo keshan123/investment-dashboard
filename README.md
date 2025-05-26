@@ -1,5 +1,33 @@
 # investment-dashboard
 
+## Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/keshan123/investment-dashboard.git
+   cd investment-dashboard
+   ```
+2. **Set Node version (requires nvm):**
+   ```sh
+   nvm use
+   # If you don't have the correct Node version, install it:
+   nvm install
+   ```
+3. **Install the Ionic CLI (if you don't have it):**
+   ```sh
+   npm install -g @ionic/cli
+   ```
+4. **Install project dependencies:**
+   ```sh
+   npm install
+   ```
+5. **Start the development server:**
+   ```sh
+   ionic serve
+   ```
+
+---
+
 ## Features
 
 ### Portfolio Tab
