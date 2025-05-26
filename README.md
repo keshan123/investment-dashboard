@@ -75,6 +75,8 @@
 ---
 
 ## Platform Notes & Known Issues
+- **Was built for DarkMode:**
+  - This project was created for darkmode only users as that was the device i had with me, given more time i would have prepared for both. 
 - **iOS Touch Events:**
   - Custom Angular animations on dynamic lists (such as fade-in or staggered animations) can interfere with touch/click events on iOS devices, especially when using Ionic components. Animations were removed from the market list to ensure best touch support.
 - **ng-reflect attributes:**
